@@ -57,9 +57,9 @@ header a h1 {
     justify-content: space-evenly;
 }
 
-.button {
-    color: #000;
-    background: #e1e1e1;
+.button-main {
+    background: #000;
+    color: #e1e1e1;
     font-size: 2rem;
     height:50vw ;
     max-height: 10rem;
@@ -68,13 +68,23 @@ header a h1 {
     border-radius: 2rem;
 }
 
+.button {
+    color: #000;
+    background: #e1e1e1;
+    font-size: 2rem;
+    height:4rem;
+    width: 70vw;
+    max-width: 27.5rem;
+    border-radius: 1.5rem;
+}
+
 .container__button--1:hover {
     background: #36b3c0;
     color: #000000;
 }
 
 .container__button--2:hover {
-    background: #e47e1e;
+    background: #f70000;
     color: #000000;
 }
 
@@ -92,9 +102,25 @@ header a h1 {
 }
 
 .container__button--2 {
-    border: solid 0.2rem #e47e1e;
-    box-shadow: 0 0 3rem #e47e1e;
+    border: solid 0.2rem #ff0000;
+    box-shadow: 0 0 3rem #ff0000;
 }
+
+/* Botones del index */
+.container__button--5 {
+    border: solid 0.2rem #0ff100;
+    box-shadow: 0 0 3rem #0ff100;
+}
+
+.container__button--5:hover {
+    background: #e1e1e1;
+    color: #000000;
+}
+
+.container__button--5:active {
+    background: #0ff100;
+}
+/* Botones del index */
 
 footer {
     width:100%;
@@ -106,4 +132,3 @@ footer {
     align-items: center;
     justify-content: center;
 }
-/* main */
