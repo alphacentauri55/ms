@@ -1,3 +1,7 @@
 header a h1 {
     font-size: 3.8rem;
 }
+
+.container__section {
+    margin-bottom: 0;
+}
