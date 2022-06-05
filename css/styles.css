@@ -1,9 +1,3 @@
-:root {
-    --title-color: #0ff100;
-    --code-border-color: #36b3c0;
-    --agenda-border-color:#e47e1e;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
