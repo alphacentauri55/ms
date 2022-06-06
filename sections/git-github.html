@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="A site about personal shit from Simon">
+    <title>Git y github</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="../css/desktop.css" media="screen and (min-width: 850px)">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <h1>MY SH*T</h1>
+        </a>
+    </header>
+
+    <main class="info__container">
+        <br>
+        <br>
+        <h1 class="main__title">Git y github</h1>
+        <br>
+
+        <section class="sections-titles">
+            <a href="#comandoslinux"><div class="smoth-scrolls">Comandos de linux</div></a>
+            <a href="#basicosgit"><div class="smoth-scrolls">Basicos de git</div></a>
+            <a href="#iniciarproyecto"><div class="smoth-scrolls">Iniciar un proyecto</div></a>
+            <a href="#eliminarcosas"><div class="smoth-scrolls">Eliminar o cambiar algo</div></a>
+            <a href="#ramas"><div class="smoth-scrolls">Ramas</div></a>
+            <a href="#remoteorigin"><div class="smoth-scrolls">Remote y origin</div></a>
+            <a href="#remotalocal"> <div class="smoth-scrolls">Interaccion remota y local</div></a>
+            <a href="#ssh"> <div class="smoth-scrolls">Llave SSH</div></a>
+            <a href="#tags"> <div class="smoth-scrolls">Tags</div></a>
+            <a href="#rebase"> <div class="smoth-scrolls">Rebase</div></a>
+            <a href="#stashclean"> <div class="smoth-scrolls">Stash, clean, cherry-pick y amend</div></a>
+            <a href="#resetreflog"> <div class="smoth-scrolls">Reset y reflog</div></a>
+            <a href="#tricks"> <div class="smoth-scrolls">Tricks</div></a>
+            <a href="#agregarcolab"> <div class="smoth-scrolls">Agregar colaboradores</div></a>
+            <a href="#githubpages"> <div class="smoth-scrolls">Github pages y .gitignore</div></a>
+            <a href="#insights"> <div class="smoth-scrolls">Insights de github</div></a>
+        </section>
+
+        <section class="info__container--main">
+            <br>
+            <p class="title" id="comandoslinux">Comandos de linux</p>
+            <br>
+            <p class="info">
+                cd carpeta {te mueves de directorio}
+                <br>
+                <br>
+                cd ~ {te devuelve al directrio home, al usuario de la computadora. "tambien sirve solo poner cd"}
+                <br>
+                <br>
+                cd .. {Te devuelves al directorio anterior}
+                <br>
+                <br>
+                pwd {Muestra la ruta desde el usuario hasta el directorio actual}
+                <br>
+                <br>
+                ~ {muestra cual es el home}
+                <br>
+                <br>
+                mkdir nombre {Crea una carpeta en el directorio actual}
+                <br>
+                <br>
+                touch nombre {Crea un archivo en el directorio actual}
+                <br>
+                <br>
+                rm archivo {Elimina un archivo}
+                <br>
+                <br>
+                rm -r carpeta {Elimina una carpeta}
+                <br>
+                <br>
+                mv archivo nombreNuevo {Cambia el nombre de un archivo o carpeta}
+                <br>
+                <br>
+                ls -al {Muestra los archivos y carpetas de mi directorio actual}
+                <br>
+                <br>
+                alias arbolito="git log --all --graph --oneline --decorate" {alias es para crear variables}
+                <br>
+                <br>
+                cat archivo {Muestra el contenido del archivo}
+                <br>
+                <br>
+                code archivo {Abre VSC con el archivo, tambien se puede abrir una carpeta entera}
+                <br>
+                <br>
+                history {Muestra el historial de comandos}
+                <br>
+                <br>
+                !numero {Ejecuta el comando segun el numero del history}
+            </p>
+            <br>
+
+            <div class="line" id="basicosgit"></div>
+            <p class="title">Basicos de git</p>
+            <br>
+            <p class="info">
+                gitk {Abre una interfas mas grafica donde puedo ver los cambios del proyecto}
+                <br>
+                <br>
+                git config --list {Muestra la configuracion de nuestro git, el nombre, correo, etc...}b
+                <br>
+                <br>
+                git status {Muestra el estado de git, si hay algun archivo o carpeta en staging o si algo no se
+                ha agregado a staging}
+                <br>
+                <br>
+                git log {Muestra los commits que se han hecho}
+                <br>
+                <br>
+                git log --stat {Muestra los commits con mas estadisticas}
+                <br>
+                <br>
+                git log --all {Muestra todos los commits, algunas ramas no muestran todos los commits con un log
+                normal}
+                <br>
+                <br>
+                git add archivo {Agrega el archivo o carpeta a staging para asi ser trakeado, se guarda en la
+                memoria ram}
+                <br>
+                <br>
+                git add . {Envia a staging todos los archivos de mi directorio actual}
+                <br>
+                <br>
+                git commit -m"mensaje de cambio" {Guarda los cambios en mi repositorio local para poder ser
+                enviados, asi dejan de estar en staging y ya se incorporan en el master o en cualquier rama}
+                <br>
+                (Si no se le pone un mesaje se me abre la consola de git, para escribir el mensaje ahi se
+                presiona esc+i y para guardar el mensaje se presiona esc shift+zz)
+                <br>
+                <br>
+                git commit -am"mensaje de cambio" {Hace un add al mismo tiempo del commit, solo funciona
+                en archivos que ya hallan estado en staging al menos 1 vez}
+                <br>
+                <br>
+                git show {Muestra los cambios del ultimo commit, asi se sabe donde va el head}
+                <br>
+                <br>
+                git diff {Muestra los cambios que hay cuando un archivo no esta en staging, no esta en memoria ram
+                y no se le ha hecho add}
+                <br>
+                <br>
+                git diff hashviejo hashCommitnuevo {Muestra la diferencia de cambuios entre las versiones}
+            </p>
+            <br>
+
+            <div class="line" id="iniciarproyecto"></div>
+            <p class="title">Iniciar un projecto</p>
+            <br>
+            <p class="info">
+                git init {inicializa el master en el directorio actual}
+                <br>
+                <br>
+                git clone url {Clona el repositorio remoto en mi directorio actual para asi crear el repositorio
+                local, crando el init del master y seteando el origin con ese link}
+                <br>
+                (Si es un repositorio publico no me pide contraseña)
+            </p>
+            <br>
+
+            <div class="line" id="eliminarcosas"></div>
+            <pp class="title">Eliminar o cambiar cosas</pp>
+            <br>
+            <p class="info">
+                git rm --cached archivo {quita el add del archivo, unstaged}
+                <br>
+                <br>
+                git rm --force {elimina los archivos del disco duro}
+                <br>
+                <br>
+                git reset hashCommit --hard {Elimina todos los cambios que se hicieron despues de este commit,
+                se recrea la historia de los commits en git log}
+                <br>
+                <br>
+                git reset hashCommit --soft {Elimina el historial de los commits pero no los cambios}
+                <br>
+                <br>
+                git reset head archivo {Mueve el archivo a unstaged}
+                <br>
+                <br>
+                (git rm --cached elimina un archivo de staging. Es como si nunca le hubieses hecho git add a ese
+                archivo. Mientras que git reset HEAD devuelve el archivo a su último commit, por si quiere modificar
+                algo y luego le puedes hacer git add o git commit otra vez.)
+                <br>
+                <br>
+                <b>
+                    git checkout hashCommit archivo {Me devuelvo a los cambios del archivo en ese commit}
+                    <br>
+                    <br>
+                    git checkout master archivo {Me devuelvo al ultimo commit hecho, la ultima version}
+                    <br>
+                    <br>
+                    (Si en vez de hacer esto hago un add y commit, se me guarda este archivo anterior como el ultimo
+                    cambio hecho, la ultima version seria esta)
+                </b>
+            </p>
+            <br>
+
+            <div class="line" id="ramas"></div>
+            <p class="title">Ramas</p>
+            <br>
+            <p class="info">
+                git branch nombre {Crea una rama}
+                <br>
+                <br>
+                git branch {Muestra las ramas que hay y en la que estoy}
+                <br>
+                <br>
+                git branch -d nombre {Elimina una rama de forma local}
+                <br>
+                <br>
+                git push origin --delete nombre {Elimina la rama de forma remota}
+                <br>
+                <br>
+                git branch -r {Muestra las ramas remotas, las que estan en github acorde a mi origin}
+                <br>
+                <br>
+                git brach -a {Muestra todas las ramas, en blanco las locales y en rojo las remotas}
+                <br>
+                <br>
+                git checkout nombreRama {Moverse entre ramas, cambia de la actual a la nombreRama}
+                <br>
+                <br>
+                git merge nombreRama {Hace un merge en la rama actual con nombreRama, los merges siempre se hacen
+                en la rama donde quiero que queden guardados los cambios, como el master}
+                <br>
+                <br>
+                git show-brach --all {Muestra el historial de cambios que se han hecho de cada rama}
+            </p>
+            <br>
+
+            <div class="line" id="remoteorigin"></div>
+            <p class="title">Remote y origin</p>
+            <br>
+            <p class="info">
+                git remote add origin url {Añade el link remoto al origin para trabajar en el local, 'un fetch'}
+                <br>
+                (origin puede ser cualquier nombre e incluso se puede tener varios url remotos, solo se cambia
+                la gramatica al escribir un pull, push o cualquier comando con remote)
+                <br>
+                <br>
+                git remote {Me muestra si hay algun origen añadido}
+                <br>
+                <br>
+                git remote -v {Me muestra la url de los origenes remotos}
+                <br>
+                <br>
+                git remote rm origin {Elimina el origin}
+                <br>
+                <br>
+                git remote set-url origin url {Cambie la url del origin, por ejemplo sirve cuando se cambia de HTTPS 
+                a SSH}
+            </p>
+            <br>
+
+            <div class="line" id="remotalocal"></div>
+            <p class="title">Interaccion remota y local</p>
+            <br>
+            <p class="info">
+                <b>Gramatica:</b>
+                <br> 
+                git push origin master {Enviar al origen mi version del master}
+                <br>
+                git pull origin master {Traer del origen al master la ultima version}
+                <br>
+                <br>
+                git fetch {Traer datos de github a mi repositorio local}
+                <br>
+                <br>
+                git merge {Fucionar versiones de mi repositorio remoto al local}
+                <br>
+                <br>
+                git pull {Hace un fetch y un merge al mismo tiempo, trae la ultima version del repo remoto de
+                github a mi repositorio local y lo fuciona en el directorio}
+                <br>
+                <br>
+                git push {Envia mi version del repo local al remoto de github, si es publico y soy colaborador se
+                hace un merge automatico, de lo contrario se crearia un pull request}
+                <br>
+                <br>
+                git pull origin master --allow-unrelated-histories {Permite hacer un pull cuando las versiones o
+                contenidos son algo distintos}
+            </p>
+            <br>
+
+            <div class="line" id="ssh"></div>
+            <p class="title">Llave SSH</p>
+            <br>
+            <p class="info">
+                SSH = Security Share
+                <br>
+                <br>
+                ssh-keygen -t rsa -b 4096 -C "email" {Crea una llave publica y privada}
+                <br>
+                <br>
+                eval $(ssh-agent -s) {Prende el servidor de ssh}
+                <br>
+                <br>
+                cd ~/.ssh {Me envia a la carpeta donde estan mis llaves}
+                <br>
+                <br>
+                ssh-add ~/.ssh/id_rsa {Implementa la llave privada en git}
+                <br>
+                <br>
+                <a href="https://platzi.com/tutoriales/1557-git-github/4067-configurar-llaves-ssh-en-git-y-github/?utm_source=google&utm_medium=cpc&utm_campaign=12915366154&utm_adgroup=&utm_content=&gclid=CjwKCAjwxOCRBhA8EiwA0X8hi917cZ9_CKccc3WX0Axwl9nRpXw6BVlQp8LysCG2jlZUUiTGC8SAVRoCWnwQAvD_BwE&gclsrc=aw.ds">Crear SSH con github</a>
+            </p>
+            <br>
+
+            <div class="line" id="tags"></div>
+            <p class="title">Tags</p>
+            <br>
+            <p class="info">
+                git tag -a nombreTag -m"mensaje" hashCommit {Se añade un tag al commit, lo que se muestra es el 
+                nombreTag, no se donde aparece el mensaje}
+                <br>
+                <br>
+                git tag {Muestra la lista de todos los tags}
+                <br>
+                <br>
+                git show-ref --tags {Muestra el hash del commit asociado a cada tag}
+                <br>
+                <br>
+                git tag -d nombreTag {Elimina el tag}
+                <br>
+                <br>
+                git push origin --tags {Se envian los tags al remoto}
+                <br>
+                <br>
+                git push origin --delete nombreTag {Elimina el tag en el remoto}
+                <br>
+                <br>
+                git push origin :refs/tags/nombreTag {Otra forma de eliminar un tag remoto}
+            </p>
+            <br>
+
+            <div class="line" id="rebase"></div>
+            <p class="title">Rebase</p>
+            <br>
+            <p class="info">
+                Reescribe la historia del repositorio, cambia la historia de donde comenzó la rama y solo debe ser usado de manera local 
+                <br>
+                <br>
+                -rebase es una mala práctica pero sirve para ocultar cambios en la historia
+                <br>
+                <br>
+                -Es cómo hacer un merge pero altera los cambios en los commits, sobrepone los cambios en la historia priorizando la rama en la cual se está y se hace el git rebase
+                <br>
+                <br>
+                Git rebase master {estando en la rama de cambios}
+                <br>
+                Git rebase ramaCambios {estando en el master}
+                <br>
+                <br>
+                Primero se hace el rebase en la rama de cambios y después en la master, después se puede eliminar la rama con git branch -d ramaCambios y así se cambia la historia como si nada hubiera pasado.
+            </p>
+            <br>
+
+            <div class="line" id="stashclean"></div>
+            <p class="title">stash, clean, cherry-pick y amend</p>
+            <br>
+            <p class="info">
+                <b>Stash:</b>
+                <br>
+                <br>
+                git stash {Cuando hice algun cambio y no le quiero hacer un commit, esto hace que esos cambios
+                se pongan stasheados temporalmente hasta que los quiera utilizar y hacer un commit, me devuelve a
+                la historia del ultimo commit hecho} 
+                <br>
+                <br>
+                -Sirve cuando quieres probar cosas pequeñas o no muy seguras las cuales no merecen una rama y asi tener
+                estos cambios guardados temporalmente en caso de usarlos o no
+                <br>
+                <br>
+                git stash list {Muestra si hay algo stasheado 'WIP = Work In Progress' y me muestra el ultimo commit
+                hecho de la version actual}
+                <br>
+                <br>
+                git stash pop {Me devuelve los cambios que tenia stasheados para hacerles un commit, se le quita
+                el stash, esto debe hacerse en la misma rama que se hizo el git stash}
+                <br>
+                <br>
+                git stash drop {Elimina todos los cambios que esten en el stash, sirve cuado la cago y antes de hacer
+                un commit puedo hacer un stash y despues un stash drop, asi el archivo se quedara en la version del ultimo
+                commit antes de cagarla}
+                <br>
+                <br> 
+                git stash branch nombreRama {Crea una rama donde trae los cambios que esten en el stash, asi puedo trabajar
+                desde ahi y hacerle commit para experimentar y trabajar}
+                <br>
+                <br>
+                <br>
+                <b>Clean:</b>
+                <br>
+                <br>
+                git clean -f {Elimina archivos que no se le han hecho un add o un commit, archivos que estan por error
+                como archivos de imagenes que no nesecitas}
+                <br>
+                (Si en el .gitignore hay hay estas extensiones de archivos, estas no se borraran con git clean 
+                porque git esta ignorando este tipo de archivos)
+                <br>
+                <br>
+                git clean --dry --run {Muestra los archivos que se eliminaran si se hace un git clean -f}
+                <br>
+                <br>
+                -A git solo le importa los archivos y no las carpetas, por eso con git clean solo se eliminan archivos, las 
+                carpetas deben ser eliminadas manualmente con comandos de linux.
+                <br>
+                <br>
+                <br>
+                <b>Cherry-pick:</b>
+                <br>
+                <br>
+                git cherry-pick hashCommit {Con el hash del commit, se trae ese cambio y lo incorpora el rama donde 
+                ejecute este comando}
+                <br>
+                <br>
+                -Trae commits especificos de una rama al master o a cualquier otra
+                <br>
+                <br>
+                -Se ejecuta desde la rama donde quiera traer o incorporar el cambio y no se le tiene que hacer otro 
+                commit
+                <br>
+                <br>
+                -Cherry-pick no es una buena practica pero se puede usar de manera sabia
+                <br>
+                <br>
+                <br>
+                <b>Amend:</b>
+                <br>
+                <br>
+                git commit --amend {Cuando hice un commit mal y lo quiero juntar con el commit anterior, quiero que 
+                varios cambios esten en el mismo commit pero ya hice un commit con solo un cambio}
+                <br>
+                <br>
+                -Primero se tiene que hacer el add al cambio que quiero juntar con el ultimo commit y despues ejecuto 
+                este comando para asi juntarlos.
+            </p>
+            <br>
+
+            <div class="line" id="resetreflog"></div>
+            <p class="title">Reset y reflog</p>
+            <br>
+            <p class="info">
+                git reflog {Muestra todos lo cambios que se han hecho, incluso cuando se borra una branch o cualquier
+                cambio, incluyendo resets y todo el historial de cambios}
+                <br>
+                -Muestra al lado del hash del commit un HEAD(numero)
+                <br>
+                <br>
+                git reset HEAD(numero) {Hace un reset en la historia de los commits y cambios pero permanece
+                lo que esta en staging}
+                <br>
+                (Casi nunca se usa)
+                <br>
+                <br>
+                git reset --hard hashCommit {Con el hash del reflog, me hace un reseteo y me cambia la historia de los
+                commits hasta ese ultimo hashCommit, trae absolutamente cualquier cambio incluyendo archivos borrados}
+                <br>
+                <br>
+                -Estos resets apareceran en la historia del git reflog, si se quiere se puede devolver a uno de esos 
+                errores en caso de cagarla
+                <br>
+                <br>
+                -Usar git reset es una mala practica y solo debe usarse en casos de emergencia
+            </p>
+            <br>
+
+            <div class="line" id="tricks"></div>
+            <p class="title">Tricks</p>
+            <br>
+            <p class="info">
+                git comando --help {Abre el manual sobre como funciona cada comando}
+                <br>
+                <br>
+                git config --global alias.arbolito 'log --all --graph --decorate --oneline'
+                <br>
+                -Crea un alias interno en tu configuracion de git para que asi no se borre siempre que cierras la 
+                consola como con los alias normales 
+                <br>
+                - El nombre va despues del alias. y entre "" el comando de git, se ejecuta: git arbolito
+                <br>
+                <br>
+                <br>
+                git grep palabra {Me muestra en que archivo use esa palabra y como la use}
+                <br>
+                <br>
+                git grep -n palabra {Me muestra en que linea del archivo use esa palabra}
+                <br>
+                <br>
+                git grep -c palabra {Muestra cuantas veces use esa palabra en cada archivo}
+                <br>
+                <br>
+                -Si se quiere buscar una etiqueta en vez de una palabra se escribe con comillas ""
+                <br>
+                <br>
+                <br>
+                git log -s "palabra" {Muestra dentro del historial de commits cuando y donde se hizo algo relacinado
+                con esa palabra, muestra solo los commits relacionados a esa palabra}
+                <br>
+                <br>
+                git shortlog {Muestra los commits que ha hecho cada miembro del proyecto, el log por persona}
+                <br>
+                <br>
+                git shortlog -sn --all {Muestra la cantidad de commits que ha hecho cada miembro del proyecto incluyendo
+                los borrados, si se quiere ver sin lo borrados se le quita el --all} 
+                <br>
+                <br>
+                git shortlog -sn --all --no-merges {Cantidad de commits por miembro sin lo commits de merges}
+                <br>
+                <br>
+                <br>
+                git blame -c archivo {Muestra que miembro hizo cada linea del archivo, el -c es opcional pero hace que 
+                se vea mejor}
+                <br>
+                <br>
+                git blame archivo -Lnumero1,numero2 {Muestra el blame desde la linea numero1 hasta la linea numero2}
+                <br>
+                -La L tiene que ser en mayuscula
+            </p>
+            <br>
+
+            <div class="line" id="agregarcolab"></div>
+            <p class="title">Agregar colaboradores en Github</p>
+            <br>
+            <p class="info">
+                <br>
+                -Me voy a settings de mi repositorio (no del perfil) 
+                <br>
+                - voy a la pestaña de collaborators 
+                <br>
+                - añado a la persona con el usuario de github o con el correo asociado 
+                <br>
+                - le llega un correo de invitación al repositorio a la persona o puedo copiar el link que aparece después de añadirlo y se lo envío directamente a el
+                <br>
+                <br>
+                (esto es permitir acceso de push a la personas aun así el repositorio sea abierto)
+                <br>
+                <br>
+                <br>
+                <b>Info adicional:</b>
+                <br>
+                <br>
+                -Pull request es una forma de staging en la cual se revisa el código por otras personas para aprobarlo y hacer el merge
+                <br>
+                -Fork es la forma de clonar un proyecto de github y así usarla personalmente, crea mi propio repositorio como una copia, esto solo cuando es un repositorio abierto
+            </p>
+            <br>
+
+            <div class="line" id="githubpages"></div>
+            <p class="title">Github pages y .gitignore</p>
+            <br>
+            <p class="info">
+                <b>Usar el hosting gratis de git hub:</b>
+                <br>
+                <br>
+                -creo un repositorio público con el mismo nombre de mi usuario de github, creo un archivo llamado index.html
+                <br>
+                -voy a los settings de ese repositorio, voy a github pages, y en la parte de source pongo la rama master 
+                <br>
+                -cambió el nombre del repositorio en setting por: simongiraldo.github.io
+                <br>
+                -otra vez en los settings de git hub pages me sale el link de la página (si no hay un index.html, se tiene que agregar a el link /archivo)
+                <br>
+                <br>
+                <br>
+                <b>.gitignore:</b>
+                <br>
+                <br>
+                -Ee crea en archivo en el master con este nombre, ahí se va a poner todos los archivos que hacen que git los ignore, más que todo los binarios como las fotos para evitar problemas con git, ej: *.png *.jpg
+                <br>
+                -Esto solo son buenas prácticas para no usar archivos binarios en el repositorio local y remoto,
+                asi en github solo aparecerá la carpeta de imágenes y no las imágenes con las extensiones del gitignore
+            </p>
+            <br>
+
+            <div class="line" id="insights"></div>
+            <p class="title">Insights de Github</p>
+            <br>
+            <p class="info">
+                -Si me voy a insights en mi proyecto de github y en la sección de pulse: me muestra todos los pull requests, todos los problemas, todos los merges, contribuidores, etc...
+                <br>
+                (también se puede seleccionar la búsqueda por fecha como por ejemplo último mes)
+                <br>
+                <br>
+                -Contribuitors {en esta parte de insights me muestra toda la información de los contribuidores y un poco de la historia sobre qué ha pasado en el proyecto con ellos}
+                <br>
+                <br>
+                -Comunity {en esta sección se muestra una lista de lo que quieres hacer con el proyecto, como qué tipo de archivos les falta o qué archivos ya tienen hechos}
+                <br>
+                <br>
+                -Traffic {muestra el tráfico que ha tenido el proyecto, las personas que lo ven}
+                <br>
+                <br>
+                -Commits {la historia de commit, cuantos commits se han hecho por día, etc...}
+                <br>
+                <br>
+                -Code frecuency {cuánto código se añado y cuánto código se borra a la semana, se muestra en grafico}
+                <br>
+                <br>
+                -Dependency graph {Que otras librerías se están utilizando y a qué repositorio pertenece}
+                <br>
+                <br>
+                -Alerts {es personal del proyecto y muestra alertas cuando tienes que ponerle atención al proyecto}
+                <br>
+                <br>
+                -Network {muestra la historia de quien ha estado manipulando el proyecto}
+                <br>
+                <br>
+                -Forks {muestra qué persona le ha hecho un fork al proyecto}
+            </p>
+            <br>
+
+        </section>
+
+    </main>
+    
+    <footer>
+        <p class="footer-p">That's it</p>
+    </footer>
+</body>
+
+</html>
