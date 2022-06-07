@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="A site about personal shit from Simon">
+    <title>Fundamentos de software</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="../css/desktop.css" media="screen and (min-width: 850px)">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <h1>MY SH*T</h1>
+        </a>
+    </header>
+
+    <main class="info__container">
+        <br>
+        <br>
+        <h1 class="main__title">Fundamentos de software</h1>
+        <br>
+
+        <section class="sections-titles">
+            <a href="#dot"><div class="smoth-scrolls">.</div></a>
+            <a href="#coponentescomp"><div class="smoth-scrolls">Componentes en comun de los computadores</div></a>
+            <a href="#discosduros"><div class="smoth-scrolls">Discos duros</div></a>
+            <a href="#ram"><div class="smoth-scrolls">RAM</div></a>
+            <a href="#cpu"><div class="smoth-scrolls">CPU</div></a>
+            <a href="#sistinfo"><div class="smoth-scrolls">Sistemas de entradas de informacion</div></a>
+            <a href="#introredes"> <div class="smoth-scrolls">Intro a redes, protocolos y redes</div></a>
+            <a href="#puertosred"> <div class="smoth-scrolls">Puertos y protocolos de red</div></a>
+            <a href="#dns"> <div class="smoth-scrolls">DNS y QoS</div></a>
+            <a href="#velinternet"> <div class="smoth-scrolls">Velocidad del internet</div></a>
+            <a href="#navinternet"> <div class="smoth-scrolls">Navegacion en internet</div></a>
+            <a href="#temasbuscar"> <div class="smoth-scrolls">Conceptos para profundizar</div></a>
+        </section>
+
+        <section class="info__container--main">
+            <br>
+            <p class="title" id="dot">.</p>
+            <br>
+            <p class="info">
+                <b>System on a chip: </b>Es todo el sistema de funcionamiento de un CPU normal de computadora,
+                integrado en un Chip
+                <br>
+                <br>
+                <b>GPU: </b>Es como el Front-End del software, se encarga de que todos los gráficos de la computadora se vean y funcionen perfectamente bien.
+                Haciendo que el CPU deje de preocuparse por eso y se enfoque en otros tipos de procesamiento.
+                <br>
+                <br>
+                <b>Evolucion de almacenamiento: </b>Tarjetas perforadas -> Cintas Magnéticas -> Disquetes de 5’25" -> Disquetes de 3’5" -> CD -> Discos Flash (usb) -> Discos duros portátiles -> Almacenamiento Cloud
+                <br>
+                <br>
+                <b>funcionamiento cuando se envia un correo: </b><a
+                    href="https://static.platzi.com/media/user_upload/platzi-67c2c843-924c-4a35-8378-9365d29d91e6.jpg">Aqui</a>
+                <br>
+                <br>
+                <b>Modelo cliente/servidor: </b><a href="https://static.platzi.com/media/user_upload/resumen-8b83af5d-f53d-4415-80e2-a3b1e889ef74.jpg">Aqui</a>
+                <br>
+                <br>
+                <b>Profundizar conocimientos: </b><a href="https://platzi.com/clases/1098-ingenieria/6566-internet-es-mas-grande-de-lo-que-crees/">Video de una clase de platzi</a>
+                <br>
+                <br>
+                <b>Bits: </b>Es un 0 o un 1
+                <br>
+                <br>
+                <b>Bytes: </b>Un byte son 8 bits
+                <br>
+                -Los bytes funcionan con el sistema unicode junto al codigo ASCII para que el cpu entienda los
+                caracteres o ejecute ciertas
+                tareas, las ondas electromagneticas son las que encienden los bits y asi se determina un 1 o 0.
+                <br>
+                <br>
+                -UTF-8 utiliza un byte, UTF-16 utiliza 2
+            </p>
+            <br>
+
+            <div class="line" id="componentescomp"></div>
+            <p class="title">Componentes en comun de los computadores</p>
+            <br>
+            <p class="info">
+                <b>CPU - Central Processing Unit: </b>Procesador central (con marcas como Intel, AMD). Para conocer lacapacidad de tu CPU te guías por los GHz (velocidad a la que procesan una instrucción) y Cores (# deCPU’s en un mismo chip, cuantas instruccionespueden hacer al mismo tiempo).
+                <br>
+                <br>
+                <b>BIOS: </b>Chip especial que está instalado en la tarjeta madre, es un sistema operativo de arranque. Cuando arranca intenta detectar todas las cosas que están conectadas a un computador.
+                <br>
+                <br>
+                <b>Disco Duro: </b>Es dónde se guarda toda la información, es dónde está el sistema operativo.
+                <br>
+                <br>
+                <b>RAM - Random Access Memory: </b>Es un tipo de intermediario entre el Sistema Operativo que está en el discoduro y el CPU. Es una memora de alta velocidad (memoria volátil), sólo funciona cuando hay electricidad.
+                <br>
+                <br>
+                <b>Memristor: </b>Pieza electrónica que logra guardar la onda eléctrica que pasa por ella incluso cuando sedesconecta. Es posible que sea el reemplazo del disco duro y la memoria RAM en el futuro.
+                <br>
+                <br>
+                <b>Periféricos: </b>Pantalla, teclado, mouse, puertos, etc.
+                <br>
+                <br>
+                <b>Drivers: </b>Convierte la interacción de los accesorios periféricos en Bits y Bytes para que el computadorpueda entender las instrucciones que les damos a través de ellos.
+                <br>
+                <br>
+                <b>GPU: </b>Canal de comunicación entre la pantalla y el CPU. Es quién se encarga de mostrar todo en la pantalla, desde que arranca hasta reproducir videos y videojuegos.
+            </p>
+            <br>
+
+            <div class="line" id="discosduros"></div>
+            <p class="title">Dicos duros</p>
+            <br>
+            <p class="info">
+                <b>Forma en que organizan datos: </b>
+                <br>
+                <br>
+                -Persistente
+                <br>
+                <br>
+                -Secuencial
+                <br>
+                <br>
+                -Estructurada (Depende del sistema de archivos, que a su vez depende del O.S que esté en el disco duro, es como se estructura un archivo dentro del disco duro)
+                <br>
+                <br>
+                Sistemas de archivos:
+                <br>
+                <br>
+                -Windows: FAT16 - FAT32, NTFS
+                <br>
+                <br>
+                -Linux: Ext3 - Ext4
+                <br>
+                <br>
+                -Mac OS: HFS, APFS
+                <br>
+                <br>
+                <br>
+                <b>Forma de localizar y leer archivos: </b>
+                <br>
+                <br>
+                -En la parte superior de los Discos Duros existe una cabecera, la cual guarda el indice de todos los archivos, esto permite que en el momento de lectura desde la cabecera, se conozca en dónde está ubicado el archivo en cuestión.
+                <br>
+                <br>
+                <br>
+                <b>Borrado de archivos: </b>
+                <br>
+                <br>
+                -Por tal motivo, cuando se “borra” un archivo, lo que realmente se esta haciendo es eliminando el indice en la cabecera que está relacionado con el archivo. Determinados tipos de software permiten la recuperación de estos archivos, leyendo detalladamente toodo el disco duro. Sin embargo algunas practicas de borrado (Sheredder) permiten borrar el archivo por completo, incluso ejecutando el borrado determinado número de repeticiones, lo que imposibilita el trabajo de forenses para la recuperación de datos o archivos.
+            </p>
+            <br>
+
+            <div class="line" id="ram"></div>
+            <p class="title">RAM</p>
+            <br>
+            <p class="info">
+                <b>Procesos: </b>
+                <br>
+                <br>
+                -La memoria RAM, siendo tan rápida, tiene la capacidad de ejecutar varios procesos paralelamente. El SO es uno de esos procesos ejecutados por la RAM. Sin embargo la opciones que nos ofrece el SO son muchas y no siempre se utilizan todas, por lo tanto la RAM solo carga aquellas tareas que realmente necesitamos y estamos usando frecuentemente.
+                <br>
+                <br>
+                <br>
+                <b>Localización de procesos: </b>
+                <br>
+                <br>
+                -A diferencia de los discos duros, la memoria RAM hace uso de un indice compartido con la CPU que es ultra veloz. Esto facilita y permite una localización de los procesos por parte de la CPU de una manera increíblemente rápida.
+                <br>
+                <br>
+                <br>
+                <b>Comunicación: </b>
+                <br>
+                <br>
+                -Para lograr la efectiva comunicación entre la CPU y la RAM existe lo que se conoce como un bus de datos o bridge (puente). Un bus de datos en algunas ocaciones es un cable delgado y ancho. En otros casos esta conexión está establecida como circuito en la placa madre.
+            </p>
+            <br>
+
+            <div class="line" id="cpu"></div>
+            <p class="title">CPU</p>
+            <br>
+            <p class="info">
+                -Dentro de este chip, no encontramos con un espacio que recibe por nombre Memoria Caché. En ella se guardan y almacenan cierto tipo de datos de uso frecuente, para que sea más fácil y rápido el acceso a ellos. Por ejemplo una parte del SO siempre estará almacenada en la Memoria Caché para que sea rápido acceder a él.
+                <br>
+                <br>
+                <br>
+                <b>Comunicacion: </b>
+                <br>
+                <br>
+                -Para la conexión entre en disco duro y la CPU, el bus de datos recibió inicialmente el nombre ATA, que en una versión posterior se llamó SATA. Hay otro tipo de bus de datos para el disco duro mejor que SATA, que se llamó IDE.
+            </p>
+            <br>
+
+            <div class="line" id="sistinfo"></div>
+            <p class="title">Sistemas de entradas de informacion</p>
+            <br>
+            <p class="info">
+                -Los O.S cuando se cargan, se cargan en sistemas de anillos, estos son mecanismos para proteger datos, para la
+                tolerancia a fallos y para la seguridad de los computadores  
+                <br>
+                <br>
+                <b>Primer anillo - Kernel:</b>
+                <br>
+                <br>
+                -El Kernel lo podemos entender como la capa mas profunda de nuestro S.O. por lo tanto tiene acceso completo a archivos, drivers, programas, etc…Igual que cualquier otro proceso, se carga en la RAM como la cualidad de que es lo primero en cargar.
+                <br>
+                <br>
+                -En esta capa también viven programas capaces de encriptar y desencriptar información, de tal forma que ninguna otra capa del S.O. tenga acceso a ellos.
+                <br>
+                <br>
+                <br>
+                <b>Segundo anillo - Drivers:</b>
+                <br>
+                <br>
+                -Los drivers son código que se encargan de interpretar las señales de el hardware y establecer una comunicación con el software del PC. Estos primeros drivers pertenecen a perifericos o piezas de hardware bastante importantes como la pantalla, el teclado, el mouse, etc…
+                <br>
+                <br>
+                -Es importante indicar que entre el primer y el segundo anillo hay un indice de permisos donde estan almacenados qué permisos tiene cada app
+                <br>
+                <br>
+                <br>
+                <b>Tercer anillo - Mas Drivers: </b>
+                <br>
+                <br>
+                -Otra capa de drivers carga en un tercer “puesto” en la RAM. Dado que están más alejados del Kernel, tienen menos permisos y privilegios que los drivers del segundo anillo. Dado que mediante los drivers de este anillo, se comunican en su mayoría las Apps, es necesario que primero los drivers del tercer anillo pidan permisos a los del segundo anillo para luego así comunicarse con el hardware.
+                <br>
+                <br>
+                <br>
+                <b>Cuarto anillo - Apps:</b>
+                <br>
+                <br>
+                -Finalmente en la última capa del modelo de anillos del O.S nos encontramos con las apps, que se cargan en la RAM para ejecutar procesos. Sin embargo a diferencia de los otros anillos no tienen ningún tipo de acceso directo al hardware del PC.
+                <br>
+                <br>
+                Es importante tener en cuenta que así debería ser, pues de lo contrario cualquier Software escrito por terceros tendría la capacidad de acceder casi por completo al PC y a sus piezas de Hardware.
+                <br>
+                <br>
+                <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Priv_rings.svg/675px-Priv_rings.svg.png">Imagen ilustrativa</a>
+            </p>
+            <br>
+
+            <div class="line" id="introredes"></div>
+            <p class="title">Intro a redes, protocolos y redes</p>
+            <br>
+            <p class="info">
+                <b>Que son las redes y como funciona el internet: </b><a href="https://www.youtube.com/watch?v=uunnO9yZCYk">Aqui</a>
+                <br>
+                <br>
+                <b>ISP: </b>Internet Service Provider
+                <br>
+                <br>
+                <b>Cloud: </b>Servidor en la nube
+                <br>
+                <br>
+                <b>Ethernet: </b>Cable UTP o STP para coneccion directa a la red sin ondas inalambricas
+                <br>
+                <br>
+                <b>Router: </b>Enrutador, permite que varias redes u ordenadores se conecten entre sí
+                <br>
+                <br>
+                <b>Modem: </b>Dispositivo que convierte las señales digitales en analógicas, es el que conecta el router con el Internet
+                <br>
+                <br>
+                <b>DHCP: </b>Dynamic Host Configuration Protocol - protocolo de configuración huésped dinámico
+                <br>
+                <br>
+                <b>MAC adress: </b>Identificador único que viene grabado en el hardware del dispositivo. Es un número de identificación de las piezas de hardware que se conectan a una red pública.
+                <br>
+                <br>
+                <b>Switch: </b>Con series de puertos de conexión, comparte la red entre los dispositivos conectados a él. Enruta los datos a través de un algoritmo que pregunta de dispositivo en dispositivo, hasta encontrar al indicado y así, enviarle la info que solicitó.
+                <br>
+                <br>
+                -No es inteligente, ya que no necesita de un software para enrutar datos, simplemente los manda.
+                <br>
+                <br>
+                <b>Router WIFI: </b>Con antenas y series puertos de conexión, emiten una señal por la cual nos podemos conectar ingresando la contraseña de red, ya así, se crea una conexión virtual entre el Router y el dispositivo desde el que nos estamos conectando (PC, teléfono, etc.). Puede tener o no WiFi.
+                <br>
+                <br>
+                Es inteligente, ya que tiene software especial para enrutar los datos, y para esto necesita saber:
+                <br>
+                <br>
+                -Nombre de la red 
+                <br>
+                <br>
+                -Password de la red 
+                <br>
+                <br>
+                -<b>Lista de IP's: </b> El Router asigna las IP's a través del DHCP. La manera en la que un dispositivo siempre recuerde la misma IP, es a través de la _MAC Address. _
+                Todas las interfaces de red tienen una MAC Address.
+                <br>
+                <br>
+                <br>
+                A veces los puertos del Router pueden hacer la función de un Switch, por lo que podemos reemplazar un Router por un Switch. Pero en ocasiones, se necesitan conectar muchos cables de red, por lo que sí es necesario un Switch.
+                <br>
+                <br>
+                El Router también puede conectarse a un Switch, y así tener la opción de conectarse tanto a una Red WiFi como a una red cableada.
+                <br>
+                <br>
+                A veces todos estos dispositivos están unidos en uno (cables ethernet, switches, routers), el Modem del ISP.
+                <br>
+                <br>
+                <br>
+                <b>Formas de conexión entre un módem y el Internet: </b>
+                <br>
+                <br>
+                <b>ADSL: </b>Un cable de teléfono.
+                <br>
+                <br>
+                <b>4G/LTE: </b>Antena de radio
+                <br>
+                <br>
+                <b>Fibra optica: </b>Es la forma más óptima de conectarse en la tecnología moderna
+                <br>
+                <br>
+                <br>
+                A veces tenemos redes que no emiten señales de radio, sólo emite señales de cable para ser más segura, por lo tanto no hay WiFi. Aunque a veces las señales de cable pueden ser inseguras porque es tan simple como que alguien más llegue a conectarse con un cable a nuestra red sin darnos cuenta.
+            </p>
+            <br>
+
+            <div class="line" id="puertosred"></div>
+            <p class="title">Puertos y protocolos de red</p>
+            <br>
+            <p class="info">
+                En ocasiones se le denomina conjunto de protocolos TCP/IP, en referencia a los dos protocolos más importantes que la componen, que fueron de los primeros en definirse, y que son los dos más utilizados de la familia: TCP, IP, ARP, FTP, HTTP, POP, SMTP
+                <br>
+                <br>
+                <b>IP: </b>Internet protocol {una dirección IP es un número único con el cual una computadora o un dispositivo se identifica cuando está conectada a una red con el protocolo IP}
+                <br>
+                <br>
+                <b>LAN IP: </b>Local area network IP {Son las etiquetas numericas de IPs de los dispositivos que estan conectados a una misma red, a un mismo router}
+                <br>
+                <br>
+                <br>
+                -Los routers son las puertas enlace a diferentes redes.
+                El router asigna IPs dentro de la red local y esa IP es única en esa red, hacia afuera todos los equipos se conectan con la IP que te da el proveedor de internet que tienes contratado.
+                <br>
+                <br>
+                -Para asignar IPs un software se encarga de revisar la Mac address de cada dispositivo y asignarle una IP que esté disponible (DHCP)
+                <br>
+                <br>
+                -En los esquemas de red se crea un red virtual dentro de los sistemas operativos con un concepto interno que se le conoce como los <b> puertos.
+                Un puerto es una puerta especifica para un programa específico.</b>
+                <br>
+                <br>
+                -cada solicitud que tu haces desde tu pc a traves de una red, trabaja con una ip y un puerto amigo, los puertos sirven para identificar los miles de servicios que maneja un O.S, ejemplo: cuando tu entras a twitter desde tu navegador tu estas haciendo una peticion a 102.102.20.02 (ejemplo de ip de twitter) y el puerto 80 (Puerto de HTTP), pero si quisieras subir un archivo por protocolo ftp seria 102.102.20.02 por puerto 21, 
+                que se veria reflejado como 102.102.20.02:21 y así sucesivamente cambia el puerto dependiendo del servicio.
+                <br>
+                <br>
+                <br>
+                <b>“Los protocolos son como un lenguaje de comunicación entre máquinas y los puertos son autopistas donde los mensajes del protocolo pueden transitar”</b>
+                <br>
+                <br>
+                -La cantidad total de puertos disponibles es 65,535 gracias a que internamente hay dos bytes disponibles para definir la cantidad de puertos que existen (256*256 = 65536, se le resta 1 porque el cero no cuenta) 
+                <br>
+                <br>
+                -El sistema operativo tiene reservado los puertos del 1 al 1024, para usarlos necesitas elevar los privilegios de usuario (administrador), así a través de la IP:puerto accedemos a programas específicos que viven en nuestra computadora
+                <br>
+                <br>
+                <br>
+                -Cada dirección IP está compuesta por 4 números separados por puntos y son una forma de comprender números más grandes y complejos. Las direcciones IP tienen una estructura que las convierten en privadas o públicas y que además hacen parte de la máscara de red y el getaway.
+                <br>
+                <br>
+                -Las direcciones IP permiten que cada computador o dispositivo pueda conectarse al exterior, es decir a Internet, esto a través de tecnologías como NAT (Network Address Translation)
+                <br>
+                <br>
+                <b>-Mascara de red: </b>La máscara de red o redes es una combinación de bits que sirve para delimitar el ámbito de una red de ordenadores.1 Su función es indicar a los dispositivos qué parte de la dirección IP es el número de la red, incluyendo la subred, y qué parte es la correspondiente al host. Mediante la máscara de red, un sistema (ordenador, puerta de enlace, router, etc…) podrá saber si debe enviar un paquete dentro o fuera de la subred en la que está conectado. 
+                <br>
+                <br>
+                ejemplo: Si el router tiene la dirección IP 192.168.1.1 y máscara de red 255.255.255.0, entiende que todo lo que se envía a una dirección IP con formato 192.168.1.X, se envía hacia la red local, mientras que direcciones con distinto formato de direcciones IP serán buscadas hacia afuera (internet, otra red local mayor, etc…).
+                <br>
+                <br>
+                <b>Gateway: </b>
+                <br>
+                -La pasarela (en inglés *gateway* ) o puerta de enlace, es el dispositivo que actúa de interfaz de conexión entre aparatos o dispositivos, y también posibilita compartir recursos entre dos o más computadoras.
+                <br>
+                <br>
+                -Su propósito es traducir la información del protocolo utilizado en una red inicial, al protocolo usado en la red de destino.
+                <br>
+                <br>
+                -La pasarela es normalmente un equipo informático configurado para dotar a las máquinas de una red de área local (LAN) conectadas a él de un acceso hacia una red exterior, generalmente realizando para ello operaciones de traducción de direcciones de red(NAT)
+                <br>
+                <br>
+                -Esta capacidad de traducción de direcciones permite aplicar una técnica llamada “enmascaramiento de IP” (IP Masquerading), usada muy a menudo para dar acceso a Internet a los equipos de una LAN compartiendo una única conexión a Internet, y por tanto, una única dirección IPexterna.
+                <br>
+                <br>
+                <br>
+                <b>-NAT: </b>
+                <br>
+                -La traducción de direcciones de red o NAT (Network Address Translation), es un mecanismo utilizado por routers IP para intercambiar paquetes entre dos redes que asignan mutuamente direcciones incompatibles.
+                <br>
+                <br>
+                -Consiste en convertir, en tiempo real, las direcciones utilizadas en los paquetes transportados. También es necesario editar los paquetes para permitir la operación de protocolos que incluyen información de direcciones dentro de la conversación del protocolo.
+            </p>
+            <br>
+            <div class="line" id="dns"></div>
+            <p class="title">DNS y QoS</p>
+            <br>
+            <p class="info">
+                <b>DNS: </b>El Domain Name System es un sistema de nomenclatura jerárquico descentralizado para dispositivos conectados a redes IP como Internet o una red privada, simplemente traducen una ip muy dificil de recordar a un nombre que sea sencillo de recordar
+                <br>
+                <br>
+                -El servidor DNS utiliza una base de datos distribuida y jerárquica que almacena información asociada a nombres de dominio en redes como Internet. Aunque como base de datos el DNS es capaz de asociar diferentes tipos de información a cada nombre, los usos más comunes son la asignación de nombres de dominio a direcciones IP y la localización de los servidores de correo electrónico de cada dominio.
+                <br>
+                <br>
+                -Mas info sobre DNS y el host: 
+                <a href="https://norfipc.com/articulos/viaje-archivos-ocultos-windows-archivo-hosts.html">Funcionamiento del archivo host</a>
+                <br>
+                <br>
+                <br>
+                <b>QoS: </b>Quality of service es la forma en que los proveedores de internet priorizan la velocidad dependiendo las peticioes del usuario, Ej: Se prioriza mas un email que un video, por lo tanto regulan la velocidad según el servicio al quieres acceder
+                <br>
+                <br>
+                -Cuando queremos conectarnos a puntos muy lejanos, por ejemplo el otro lado del mundo, para nuestro proveedor de internet es muy costoso por lo tanto prioriza las conexiones usando un QoS 
+                <br>
+                <br>
+                -Los proveedores de internet les pagan a los IXP para poder conectarse. Las conexiones son muy costosas.
+                <br>
+                <br>
+                -Cuando la conexión esta cerca nuestro proveedor de internet hace una red MAN (Metropolitan Area Network) y el costo de eso es casi nulo.
+                <br>
+                <br>
+                -Para hacer que la conexión sea más corta sirven los CDN (content delivery network), cuando los datos no tienen que ser procesados (archivos estáticos) los replican por todo el planeta.
+            </p>
+            <br>
+
+            <div class="line" id="velinternet"></div>
+            <p class="title">Velocidad del internet</p>
+            <br>
+            <p class="info">
+                -Los paquete comerciales de internet se miden en mega bits. Para saber los bytes tengo que devidir lo que supuestamente me venden sobre 8 (cantidad de bits que tiene un byte) y ahí obtengo la velocidad real del paquete (Mega bytes x segundo)
+                <br>
+                <br>
+                -El tiempo que tarda la conexión en establecerse es lo que llamamos ping. Lo que tarda un bit en llegar al servidor que me quiero conectar en internet, se mide en milisegundos 
+                <br>
+                <br>
+                -El ping sería la velocidad real de la conexión y los mbps sería el ancho de banda o conexion, es decir la cantidad de mega bits que pasan por segundo
+                <br>
+                <br>
+                -El ping es como la presión de un tubo de agua y el ancho de bando sería el ancho del tubo
+            </p>
+            <br>
+
+            <div class="line" id="navinternet"></div>
+            <p class="title">Navegacion en internet</p>
+            <br>
+            <p class="info">
+                <b>Historia del internet y la web: </b><a href="https://www.youtube.com/watch?v=jQdD0VGo5Gg">Aqui</a> o <a href="https://www.youtube.com/watch?v=NWUZCTTLQcg">Aqui</a>
+                <br>
+                <br>
+                <b>Peticion protocolo HTTP: </b><a href="https://static.platzi.com/media/files/http_f00292a5-0e1e-4582-a6c8-1da21dafcac1.png">Aqui</a>
+                <br>
+                <br>
+                Cuando escribimos una dirección web y damos clic, se ejecutan una serie de pasos, que no vemos pero que son responsables de que lleguemos o no al sitio elegido:
+                <br>
+                <br>
+                -El navegador le hace una petición al sistema operativo para ver si tiene una versión en caché.
+                <br>
+                <br>
+                -GET le pide al servidor los datos y se los envía a la IP del servidor.
+                <br>
+                <br>
+                -El servidor responde con un número, como 200 (OK), 404 (No encontrado), 500 (error del servidor).
+                <br>
+                <br>
+                -Se buscan los archivos que ya tenemos en caché.
+                <br>
+                <br>
+                -Se empieza a desplegar el sitio web empezando por el texto.
+                <br>
+                <br>
+                -Por último se solicitan las imágenes, videos y otros assets del sitio.
+                <br>
+                <br>
+                <br>
+                -Las cookies son datos guardados en variables y van ambos lados, tanto en el servidor como en el navegador. Las cookies pesan, entonces es importante limitarlas para no afectar la velocidad de las peticiones.
+            </p>
+            <br>
+
+            <div class="line" id="temasbuscar"></div>
+            <p class="title">Temas o conceptos para profundizar</p>
+            <br>
+            <p class="info">
+                -Sistemas operativos
+                <br>
+                <br>
+                -Sistemas operativos moviles
+                <br>
+                <br>
+                -Sandbox
+                <br>
+                <br>
+                -CPU ARM
+                <br>
+                <br>
+                -smart cards, java cards
+                <br>
+                <br>
+                -Que es la nube y como funciona: <a href="https://www.youtube.com/watch?v=h4Af5bbFAq0">Aqui</a>
+                <br>
+                <br>
+                -Entender el algoritmo de JPEG: <a href="https://platzi.com/clases/1098-ingenieria/6572-como-funciona-el-formato-jpg/">Aqui</a>
+                <br>
+                <br>
+                -contenedores de video: .mp4, avi, .flv (AVi: video sin compresión) (BMP:  imagen sin compresíón) (WAV: audio sin compresión)
+                <br>
+                <br>
+                <b>Extension de un archivo: </b>es una cadena de caracteres anexada al nombre de un archivo, habitualmente precedida por un punto. Su función principal es distinguir el contenido del archivo, de modo que el sistema operativo disponga del procedimiento necesario para ejecutarlo o interpretarlo. Sin embargo, la extensión es solamente parte del nombre del archivo y no representa ningún tipo de obligación respecto a su contenido.
+                <br>
+                <br>
+                <b>-Cabecera: </b>la cabecera es basicamente los primeros bytes de un archivo, es lo que permite al sistema operativo
+                reconocer que tipo de archivo es (En html es la etiqueta head)
+                <br>
+                <br>
+                <b>MIME types: </b>Un tipo de medio (también conocido como tipo MIME y tipo de contenido) es un identificador de dos partes para formatos de archivo transmitidos por Internet.
+                <br>
+                <br>
+                <b>-Metadatos: </b>Literalmente 'sobre datos', son datos que describen otros datos. En general, un grupo de metadatos se refiere a un grupo de datos que describen el contenido informativo de un objeto al que se denomina recurso.
+            </p>
+            <br>
+        </section>
+
+    </main>
+    
+    <footer>
+        <p class="footer-p">That's it</p>
+    </footer>
+</body>
+
+</html>
