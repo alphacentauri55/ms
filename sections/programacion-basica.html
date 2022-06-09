@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="A site about personal shit from Simon">
+    <title>Programacion basica</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="../css/desktop.css" media="screen and (min-width: 850px)">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <h1>MY SH*T</h1>
+        </a>
+    </header>
+
+    <main class="info__container">
+        <br>
+        <br>
+        <h1 class="main__title">Programacion basica</h1>
+        <br>
+
+        <section class="sections-titles">
+            <a href="#impjshtml">
+                <div class="smoth-scrolls">Implementar javascript en html</div>
+            </a>
+            <a href="#basicosjs">
+                <div class="smoth-scrolls">Basicos de javascript</div>
+            </a>
+            <a href="#manipudatos">
+                <div class="smoth-scrolls">Manipular datos con js</div>
+            </a>
+            <a href="#masjs">
+                <div class="smoth-scrolls">Ciclos funciones y condicionales</div>
+            </a>
+            <a href="#basicosprogram">
+                <div class="smoth-scrolls">Conceptos basicos de programacion</div>
+            </a>
+            <a href="#dom">
+                <div class="smoth-scrolls">El DOM y canvas</div>
+            </a>
+            <a href="#eventsforms">
+                <div class="smoth-scrolls">Evento y formularios</div>
+            </a>
+        </section>
+
+        <section class="info__container--main">
+            <br>
+            <p class="title" id="impjshtml">Implementar javascript en html</p>
+            <br>
+            <p class="info">
+                <b>Apuntes de todo el curso: <a
+                        href="https://drive.google.com/file/d/1NgDnopoxAM629f5MdxXiBcVQNI62KMkv/view">Aqui</a></b>
+                <br>
+                <br>
+                <b>1:</b>
+                <br>
+                <br>
+                -La forma mas sencilla de implementar js en html es con las etiquetas de <span
+                    class="etiquetas">script</span> al final del body, esto porque por buenas practicas es mejor que el
+                navegador cargue todo lo visual y por ultimo el js, por esto es que debe de ir lo mas abajo posible del
+                body.
+                <br>
+                <br>
+                -Por buenas practias al implementar javascript de esta manera, es importante poner el atributo type con
+                el valor 'text/javascript' asi:
+                <br>
+                <span class="etiquetas">script type = 'text/javascript'</span>
+                <br>
+                <br>
+                <span class="etiquetas">script</span>
+                <br>
+                <br>
+                <br>
+                <b>2:</b>
+                <br>
+                <br>
+                -Para implementar un archivo javascript por aparte del documento de html se usa el atributo src y con el
+                valor de la ruta del archivo js
+                <br>
+                <br>
+                <span class="etiquetas">script src = 'archivo.js'</span><span class="etiquetas">script</span>
+            </p>
+            <br>
+
+            <div class="line" id="basicosjs"></div>
+            <p class="title">Basicos de javascript</p>
+            <br>
+            <p class="info">
+                -La extension de un archivo javascript es .js
+                <br>
+                <br>
+                -Javascript usa ; para identificar cada linea
+                <br>
+                <br>
+                -Para usar variables hay que declararlas asi: var number = 5;
+                <br>
+                <br>
+                -Se pueden usar variables con el signo de dinero '$' pero es opcional.
+                <br>
+                <br>
+                -Se pueden poner etiquetas html en javascript siempre y cuando esten dentro de un string, como en php
+                <br>
+                <br>
+                alert('Mensaje o string'); {Esto dispara un mensaje de alerta en la pagina}
+                <br>
+                <br>
+                document.write('string'); {Es para escribir algo en el documento de html, como si fuera texto en el body
+                (es como un print pero este si se vera fisicamente en el documento, se pueden usar variables)}
+                <br>
+                <br>
+                console.log('string') {Es el print de javascript, sirve para ver en consola variables o texto que ayudan
+                al proceso de depuracion del codigo (Tambien sirve para ver como esta escrito un objeto por dentro y
+                sacar los metodos y atributos del propio objeto)}
+                <br>
+                <br>
+                prompt('Inserta algo: '); {Es el input de javascript para pedir informacion al usuario, pero este se
+                muestra como un alert}
+            </p>
+            <br>
+
+            <div class="line" id="manipudatos"></div>
+            <p class="title">Manipular datos con js</p>
+            <br>
+            <p class="info">
+                parseInt(variable); {Es una funcion que convierte la variable a int}
+                <br>
+                <br>
+                parseFloat(variable); {Convierte la variable a flotante}
+                <br>
+                <br>
+                toFixed(n); {Funcion que hace que la variable solo tenga n decimales}
+                <br>
+                <br>
+                document.getElementById('id'); {Asi se obtiene una etiqueta html por el nombre de un id, se puede
+                guardar en una variable}
+            </p>
+            <br>
+                
+            <div class="line" id="masjs"></div>
+            <p class="title">Ciclos funciones y condicionales</p>
+            <br>
+            <p class="info">
+                <b>Estructura de condicionales:</b>
+                <br>
+                <br>
+                if(algo == algo){
+                <br>
+                <br>
+                ....variable = algo;
+                <br>
+                <br>
+                }
+                <br>
+                else if(algo != algo){
+                <br>
+                <br>
+                }
+                <br>
+                else {
+                <br>
+                <br>
+                }
+                <br>
+                <br>
+                <br>
+                <b>Funciones:</b>
+                <br>
+                <br>
+                function nombre(parametro1, parametro2){
+                    <br>
+                    <br>
+                }
+                <br>
+                <br>
+                <br>
+                <b>Ciclos:</b>
+                <br>
+                <br>
+                whlie(True){
+                    <br>
+                }
+                <br>
+                <br>
+                for(i = 0; i != 300; i++){
+                    <br>
+                }
+                <br>
+                <br>
+                <b>Ciclo do while: </b>Este ciclo en javscript es diferente a un while normal, la diferencia es que aquí la secuencia de código se ejecuta al menos una vez, porque la comprobación de la condición se realiza al terminar la primera vuelta del bucle.
+                <br>
+                <br>
+                <b>do</b> {
+                    <br>
+                    ....codigo;
+                    <br>
+                } <b>while</b>(condicion)
+                
+            <br>
+
+            <div class="line" id="basicosprogram"></div>
+            <p class="title">Conceptos basicos de programacion</p>
+            <br>
+            <p class="info">
+                objeto.funcion(parametro); {En progrmacion cuando hay un objeto con una funcion se llama metodo}
+                <br>
+                <br>
+                objeto.variable_interna; {Cuando hay un objeto con una variable interna del objeto, se llama atributo o
+                propiedad}
+                <br>
+                <br>
+                depurar = proceso de arreglaar un codigo, debuggin
+            </p>
+            <br>
+
+            <div class="line" id="dom"></div>
+            <p class="title">El DOM y canvas</p>
+            <br>
+            <p class="info">
+                -Javascript puede manipular objetos de un navegador, principalmente el navigator, el window y el
+                document. Esto se hace con el document object model (DOM)
+                <br>
+                <br>
+                -El dom es la forma interna en que el navegador organiza el html en una estructura especial, con
+                javascript se puede maniuplar esto.
+                <br>
+                <br>
+                -El dom es el arbol de estructura del html
+                <br>
+                <br>
+                <br>
+                <b>Dibujar en el DOM con canvas</b>
+                <br>
+                <br>
+                -La etiqueta <span class="etiquetas">canvas</span> permite dibujar en html, crea una caja con un ancho y
+                con un altura que se especifica.
+                <br>
+                <br>
+                -Canvas funciona como un sistema de cordenadas normal, con la excepcion de que el origen va a ser en la
+                esquina superior izquierda y todos los 'Y' verticales son puntos positivos
+                <br>
+                <br>
+                var draw = document.getElementById('id_canvas');
+                <br>
+                var lienzo = draw.getContext('2d'); {getContext es una funcion de la etiqueta canvas, asi se le
+                especifica si es un dibujo en 3d o 2d}
+                <br>
+                <br>
+                lienzo.beginPath(); {funcion para iniciar el dibujo}
+                <br>
+                <br>
+                lienzo.strokeStyle = 'red'; {Definir el color }
+                <br>
+                <br>
+                lienzo.moveTo(100, 100); {Definir el origen del trazo}
+                <br>
+                <br>
+                lienzo.lineTo(200, 200); {definir la cordenada final de una linea}
+                <br>
+                <br>
+                lienzo.stroke(); {levantar el lapiz}
+                <br>
+                <br>
+                lienzo.closePath(); {Terminar el dibujo}
+                <br>
+                <br>
+            </p>
+            <br>
+
+            <div class="line" id="eventsforms"></div>
+            <p class="title">Eventos y formularios</p>
+            <br>
+            <p class="info">
+                Un evento es un suceso que ocurre en determinado momento: click, hover, focus, pulsar una teclam etc...
+                <br>
+                <br>
+                -Para que una funcion se invoque con un evento, se nesecita hacer esto:
+                <br>
+                <br>
+                var variable = document.getElementById('nombre');
+                <br>
+                variable.addEventListener('click', funcion);
+                <br>
+                <br>
+                -Para obtener algun valor o caracteristica de un formulario de html, se puede hacer un console.log al objeto y asi poder ver cuales son sus metodos y atributos, esto es aplicable pra cualquier etiqueta de html.
+            </p>
+            <br>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer-p">That's it</p>
+    </footer>
+</body>
+
+</html>
