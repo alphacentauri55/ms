@@ -208,6 +208,10 @@ header a h1 {
     font-size: 2.5rem;
 }
 
+#titulo { /* esto es para un ejemplo de la pagina de HTML y css */
+    color: #f00;
+}
+
 .line {
     border-top:  black dotted 0.3rem;
     width: 100%;

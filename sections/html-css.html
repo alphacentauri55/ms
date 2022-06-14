@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="A site about personal shit from Simon">
+    <title>Git y github</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="../css/desktop.css" media="screen and (min-width: 850px)">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <h1>MY SH*T</h1>
+        </a>
+    </header>
+
+    <main class="info__container">
+        <br>
+        <br>
+        <h1 class="main__title">HTML - CSS</h1>
+        <br>
+
+        <section class="sections-titles">
+            <a href="#estrucbasica">
+                <div class="smoth-scrolls">Estructura basica</div>
+            </a>
+            <a href="#imgvid">
+                <div class="smoth-scrolls">Imagenes y videos</div>
+            </a>
+            <a href="#listas">
+                <div class="smoth-scrolls">Listas</div>
+            </a>
+            <a href="#forms">
+                <div class="smoth-scrolls">Formularios</div>
+            </a>
+            <a href="#bem">
+                <div class="smoth-scrolls">Modelo BEM</div>
+            </a>
+            <a href="#emmet">
+                <div class="smoth-scrolls">Emmet</div>
+            </a>
+            <a href="#css">
+                <div class="smoth-scrolls">CSS</div>
+            </a>
+            <a href="#css">
+                <div class="smoth-scrolls">Gramatica basica</div>
+            </a>
+            <a href="#basicscss">
+                <div class="smoth-scrolls">Basicos de css</div>
+            </a>
+            <a href="#especificidad">
+                <div class="smoth-scrolls">Especificidad</div>
+            </a>
+            <a href="#medidasyherencia">
+                <div class="smoth-scrolls">Medidas, herencia y combinadores</div>
+            </a>
+            <a href="#pseudo">
+                <div class="smoth-scrolls">Pseudoclases y pseudoelementos</div>
+            </a>
+            <a href="#position">
+                <div class="smoth-scrolls">Position</div>
+            </a>
+            <a href="#display">
+                <div class="smoth-scrolls">Display</div>
+            </a>
+            <a href="#quires">
+                <div class="smoth-scrolls">Media quires y Responsive design</div>
+            </a>
+            <a href="#bad">
+                <div class="smoth-scrolls">Malas practicas</div>
+            </a>
+            <a href="#recursos">
+                <div class="smoth-scrolls">Recursos y complementos</div>
+            </a>
+        </section>
+
+        <section class="info__container--main">
+            <br>
+            <p class="title" id="estrucbasica">Estructura basica</p>
+            <br>
+            <p class="info">
+                <b>Estructura superior:</b>
+                <br>
+                <br>
+                <span class="etiquetas">!DOCTYPE html</span> {Le dice al navegador que el documento es de tipo HTML
+                y asi lo puede identificar}
+                <br>
+                <br>
+                <span class="etiquetas">html lang="en"</span> {Le indica al navegador el lenguaje de la pagina: 'en',
+                'es', etc...}
+                <br>
+                -La etiqueta html tiene etiqueta de cierre, adentro va el head y el body
+                <br>
+                <br>
+                <br>
+                <b>Head:</b>
+                <br>
+                <br>
+                <span class="etiquetas">head</span>
+                <br>
+                <br>
+                <span class="etiquetas">meta charset="UTF-8"</span> {Permite que el navegador acepte caracteres
+                especiales como tildes o emojis}
+                <br>
+                <br>
+                <span class="etiquetas">meta http-equiv="X-UA-Compatible" content="IE=edge"</span> {Muestra los sitios
+                habilitados para Google Chrome Frame, permite las funciones de rendimiento y seguridad de Google Chrome}
+                <br>
+                <br>
+                <span class="etiquetas">meta name="viewport" content="width=device-width, initial-scale=1.0"</span> {
+                hace que la pagina se adapte a la anchura del dispositivo que se esté usando, como en celulares}
+                <br>
+                <br>
+                <span class="etiquetas">meta name="robots" content="index,follow"</span> {hace que permitamos al
+                navegador usar robots para ubicar la página y darle visibilidad dependiendo de la búsqueda, si no se le
+                quiere dar permiso se pone “unfollow” en ves de follow}
+                <br>
+                <br>
+                <span class="etiquetas">meta name="description" content="texto"</span> {Esto es la descripción que
+                aparece abajo de la url cuando busco una página en Google o en cualquier navegador}
+                <br>
+                <br>
+                <span class="etiquetas">title</span>
+                Nombre o titulo de la pagina
+                <span class="etiquetas">title</span> {tituló que aparece en la parte de arriba de la pestaña en el
+                navegador}
+                <br>
+                <br>
+                <span class="etiquetas">link rel="stylesheet" href=""</span> {Sirve para poner los links de las paginas
+                de
+                estilos o para incluir una fuente externa}
+                <br>
+                <br>
+                <span class="etiquetas">head</span>
+                <br>
+                <br>
+                <br>
+                <b>Body:</b>
+                <br>
+                <br>
+                <span class="etiquetas">body</span>
+                <br>
+                <br>
+                ....<span class="etiquetas">header</span>
+                <span class="etiquetas">header</span>
+                <br>
+                <br>
+                ....<span class="etiquetas">main</span>
+                <span class="etiquetas">main</span>
+                <br>
+                <br>
+                ....<span class="etiquetas">footer</span>
+                <span class="etiquetas">footer</span>
+                <br>
+                <br>
+                {Aqui va todo el contenido visible de la pagina}
+                <br>
+                <br>
+                <a href="https://allthetags.com/">Todas la etiquetas de Html</a>
+                <br>
+                <br>
+                <span class="etiquetas">body</span>
+            </p>
+            <br>
+
+            <div class="line" id="imgvid"></div>
+            <p class="title">Imagenes y videos</p>
+            <br>
+            <p class="info">
+                <b>Imagenes</b>
+                <br>
+                <br>
+                -Tamaño máximo recomendado para una imágen: 70kb
+                <br>
+                <br>
+                -Es bueno ponerle un title='' a las imagenes o en general a cualquier vinculo
+                <br>
+                <br>
+                <span class="etiquetas">figure</span>
+                <br>
+                <br>
+                ....<span class="etiquetas">img src="./" alt="Imagen de..."</span>
+                <br>
+                ....<span class="etiquetas">figcaption</span> descripcion <span class="etiquetas">figcaption</span>
+                <br>
+                <br>
+                <span class="etiquetas">figure</span>
+                <br>
+                <br>
+                -Figure crea un contenedor a la imagen, es mejor que usar un div por semantica y buenas practicas
+                <br>
+                -figcaption pone una descripcion de la imagen, como para dar derechos de autor o pequeños titulos
+                <br>
+                <br>
+                <b>Herramientas para optimizar imágenes: </b>
+                <br>
+                <br>
+                -Tiny PNG: Comprime el tamaño de una imagen,para hacerla más ligera.
+                <br>
+                <br>
+                -Verefix: Elimina los metadatos de una imagen, para reducir su tamaño.(como la localización o la hora a
+                la cual fue tomada la foto)
+                <br>
+                <br>
+                <br>
+                <b>Videos:</b>
+                <br>
+                <br>
+                -El atributo controls permite poner controles de pausa, sonido, etc...
+                <br>
+                <br>
+                -preload='auto' permite que el navegador
+                renderice el video desde que lee la etiqueta, asi se descarga desde antes y el video se va a reproducir
+                mas rapido
+                <br>
+                <br>
+                -En el src despues de la extension se puede poner "#t=10,60", esto indica que el video va a empezar en
+                el segundo 10 cuando el usuario
+                presione play y se pausara en el segundo 60 automaticamente
+                <br>
+                <br>
+                -Se le puede poner varias etiqueta 'source' para que el video tenga varias extensiones y asi pueda
+                funcionar y
+                el navegador pueda escoger el que mejor use, Esto para asegurar que cualquier navegador pueda mostrar el
+                video.
+                <br>
+                <br>
+                <br>
+                <span class="etiquetas">video controls preload='auto'</span>
+                <br>
+                <br>
+                <span class="etiquetas">source src="./video.mp4#t=10,60"</span>
+                <br>
+                <span class="etiquetas">source src="./video.mp5"</span>
+                <br>
+                <span class="etiquetas">source src="./video.mp6"</span>
+                <br>
+                <br>
+                <span class="etiquetas">video</span>
+                <br>
+                <br>
+                <b>Nota:</b>
+                <br>
+                <br>
+                -poner a reproducir el video automaticamente en la pagina sin que el usuario lo decida es una mala
+                practica
+                y es penalizable en algunos navegadores (esto no tiene nada que ver con los atributos de arriba, #t no
+                reproduce
+                el video sin que el usuario le de play)
+            </p>
+            <br>
+
+            <div class="line" id="listas"></div>
+            <p class="title">Listas</p>
+            <br>
+            <p class="info">
+                <span class="etiquetas">ol</span> {Organized list, tiene enumeracion por cada item}
+                <br>
+                <br>
+                <span class="etiquetas">ul</span> {Unorganized list, tiene un punto en cada item}
+                <br>
+                <br>
+                <span class="etiquetas">li</span> {List item}
+                <br>
+                <br>
+                -Para quitarle el punto o la enumeracion a la lista se aplica list-style: none;
+                <br>
+                <br>
+                <b>Ejemplo:</b>
+                <br>
+                <br>
+
+                <span class="etiquetas">nav class='main-nav'</span>
+                <br>
+                ....<span class="etiquetas">ul</span>
+                <br>
+                <br>
+                ........<span class="etiquetas">li</span>Home
+                <span class="etiquetas">li</span>
+                <br>
+                ........<span class="etiquetas">li</span>Redes
+                <span class="etiquetas">li</span>
+                <br>
+                ........<span class="etiquetas">li</span>Blog
+                <span class="etiquetas">li</span>
+                <br>
+                ........<span class="etiquetas">li</span>About us
+                <span class="etiquetas">li</span>
+                <br>
+                <br>
+                ....<span class="etiquetas">ul</span>
+                <br>
+                <span class="etiquetas">nav</span>
+                <br>
+                <br>
+            <ul>
+                <li>Home</li>
+                <li>Redes</li>
+                <li>Blog</li>
+                <li>About us</li>
+            </ul>
+            <br>
+            <br>
+            <ol>
+                <li>Home</li>
+                <li>Redes</li>
+                <li>Blog</li>
+                <li>About us</li>
+            </ol>
+            </p>
+            <br>
+
+            <div class="line" id="forms"></div>
+            <p class="title">Formularios</p>
+            <br>
+            <p class="info">
+                <span class="etiquetas">form action=""</span>
+                <br>
+                <br>
+                ....<span class="etiquetas">label for='nombre'</span>
+                <br>
+                ........<span class="etiquetas">span</span>Ingresa tu nombre:
+                <span class="etiquetas">span</span>
+                <br>
+                ........<span class="etiquetas">input type="text" id='nombre' name='nombre'</span>
+                <br>
+                ....<span class="etiquetas">label</span>
+                <br>
+                <br>
+                <span class="etiquetas">form</span>
+                <br>
+
+                <label for="nombre">
+                    <span>Ingresa tu nombre: </span>
+                    <input type="text" id="nombre">
+                </label>
+
+                <br>
+                <br>
+                -Label son buenas praticas porque permite que al darle click al texto del span o a cualquier parte del
+                label, se hace focus en el campo del input para asi introducir el valor, el mouse se pone encima del
+                espacio en blanco para ingresar datos
+                <br>
+                <br>
+                -Lo que va en el "for" tiene que ser igual al ID y al name del input, esto por que sirve
+                mejor para el control de cada seccion en el formulario
+                <br>
+                <br>
+                <br>
+                <b>Input:</b>
+                <br>
+                <br>
+                -<a href="https://www.w3schools.com/html/html_form_input_types.asp">Tipos de inputs</a>
+                <br>
+                <br>
+                -autocomplete='name' {El atributo autocomplete permite asistencia automatizada del
+                navegador para rellenar campos en formularios, tiene varios valores dependiendo del tipo de input:
+                <a
+                    href="https://runebook.dev/es/docs/html/attributes/autocomplete#:~:text=HTML%20de%20autocompletar-,El%20atributo%20de%20autocomplete%20HTML%20permite%20a%20los%20desarrolladores%20web,se%20espera%20en%20el%20campo.">valores
+                    de autocomplete</a> }
+                <br>
+                <br>
+                -required {Hace que el campo sea requerido con un valor para poder enviar el formulario, es un atributo
+                sin valor}
+                <br>
+                <br>
+                -placeholder='Ingresa...' {Es el texto que sale en el campo del input de forma transaprente}
+                <br>
+                <input type="text" placeholder="Este es el placeholder">
+                <br>
+                <br>
+                <br>
+                <b>Submit vs button: </b>
+                <br>
+                <br>
+                <span class="etiquetas">input type="submit" value="SEND"</span>
+                <br>
+                <input type="submit" value="SEND">
+                <br>
+                <br>
+                <span class="etiquetas">button type="submit"</span> send
+                <span class="etiquetas">button</span>
+                <br>
+                <button type="submit">send</button>
+                <br>
+                <br>
+                -Por buenas practicas es mejor usar el input en formularios para enviar la informacion, el button es
+                mejor para cualquier boton que quiera personalizar y me sirva para otras cosas del proyecto, Ejemplo:
+                boton de like, compartir, etc...
+                <br>
+                <br>
+                <br>
+                <b>Select vs datalist:</b>
+                <br>
+                <br>
+                <span class="etiquetas">select name="colores" id=""</span>
+                <br>
+                ....<span class="etiquetas">option value='Azul'</span> Azul
+                <span class="etiquetas">option</span>
+                <br>
+                ....<span class="etiquetas">option value='Negro'</span> Negro
+                <span class="etiquetas">option</span>
+                <br>
+                ....<span class="etiquetas">option value='Verde'</span> Verde
+                <span class="etiquetas">option</span>
+                <br>
+                <span class="etiquetas">select</span>
+                <br>
+                <select name="Colores" id="">
+                    <option value="Azul">Azul</option>
+                    <option value="Negro">Negro</option>
+                    <option value="Verde">Verde</option>
+                </select>
+                <br>
+                <br>
+                <span class="etiquetas">input list='cursos'</span>
+                <br>
+                <span class="etiquetas">datalist id='cursos'</span>
+                <br>
+                ....<span class="etiquetas">option value='Javascript'</span>
+                <span class="etiquetas">option</span>
+                <br>
+                ....<span class="etiquetas">option value='HTML5'</span>
+                <span class="etiquetas">option</span>
+                <br>
+                ....<span class="etiquetas">option value='PHP'</span>
+                <span class="etiquetas">option</span>
+                <br>
+                ....<span class="etiquetas">option value='Python'</span>
+                <span class="etiquetas">option</span>
+                <br>
+                <span class="etiquetas">datalist</span>
+                <br>
+                <input list="cursos">
+                <datalist id="cursos">
+                    <option value="Javascript"></option>
+                    <option value="HTML5"></option>
+                    <option value="PHP"></option>
+                    <option value="Python"></option>
+                </datalist>
+                <br>
+                <br>
+                -Select nos permite crear una lista en un campo del formulario para que aparescan las opciones y el
+                usuario elija, esto es recomendado cuando son listas pequeñas por buenas practicas y mejor satisfaccion
+                del usuario
+                <br>
+                <br>
+                -Datalist nos permite crear una lista igual que select pero adicionalmente permite que el usuario
+                escriba la opcion que quiere y asi el campo le ofrece las opciones acorde a las letras o palabras
+                similares que escribe que estan en el datalist. Se quita el type del input y se pone list=algo, tiene
+                que tener el mismo valor del id del datalist.
+                <br>
+                <br>
+                -Datalist es recomendado para listas grandes y es una buena practica para facibilidad del usuario, sin
+                embargo select podria ser mas facil para la manipulacion de datos debido a que datalist es un campo
+                abierto y el usuario puede introducir cualquier valor aun asi no este en el datalist, dependiendo de la
+                finalidad y valores del campo del form se debe saber elegir adecuadamente cual usar.
+            </p>
+            <br>
+            <div class="line" id="bem"></div>
+            <p class="title">Modelo BEM</p>
+            <br>
+            <p class="info">
+                Block__Element--Modifier
+                <br>
+                <br>
+                <b>Block:</b>
+                <br>
+                -Un bloque es una etiqueta que es independiente, no necesita de nadie para existir: Header, nav,
+                footer, formulario, container, etc...
+                <br>
+                -Se nombran con el mismo nombre de la etiqueta: header class='header'
+                <br>
+                <br>
+                <b>Element:</b>
+                <br>
+                -Un elemento dpende directamente de un bloque para existir, es dependiente del bloque y esta ligado a
+                este
+                <br>
+                -Se nombra con el nombre del bloque__elemento: input class='form__input'
+                <br>
+                <br>
+                <b>Modifier:</b>
+                <br>
+                -Puede ser un bloque o un elemento, indican una modificacion a la estrucctura, cuando una etiqueta
+                tiene una modificacion diferente a la de sus hermanos.
+                <br>
+                -Se nombra con -- despues del elemento: li class=' nav__item nav__item--blue'
+            </p>
+            <br>
+
+            <div class="line" id="emmet"></div>
+            <p class="title">Emmet</p>
+            <br>
+            <p class="info">
+                -Emmet es un sistema de abreviacion de etiquetas que permite crear estructuras en html de forma mas
+                rapida
+                <br>
+                <br>
+                <b>Ejemplos:</b>
+                <br>
+                <br>
+                -etiqueta.algo: input.nombre = <span class="etiquetas">input class='nombre'</span>
+                <br>
+                <br>
+                -etiqueta#algo: input#nombre = <span class="etiquetas">input id='nombre'</span>
+                <br>
+                <br>
+                div>p: Pone un p dentro del div
+                <br>
+                <br>
+                div+p: pone el p despues de la etiqueta div
+                <br>
+                <br>
+                div>li*5: Crea 5 li dentro del div
+            </p>
+            <br>
+        </section>
+
+        <h1 class="main__title" id="css">CSS</h1>
+        <br>
+        <section class="info__container--main">
+            <br>
+            <p class="title">Gramatica basica</p>
+            <br>
+            <p class="info">
+                .class {Asi se agrega estilo a un clase}
+                <br>
+                <br>
+                etiqueta {Colocando el nombre de la etiqueta se agrega el estilo a todas esas etiquetas}
+                <br>
+                <br>
+                #id {Agregar estilos a un id}
+                <br>
+                <br>
+                etiqueta, .class {Sele agrega el estilo tanto a las etiquetas como a la clase}
+                <br>
+                <br>
+                etiqueta .class {Se le agrega estilos a las class que esten dentro de esa etiqueta}
+                <br>
+                <br>
+                <br>
+                <b>3 formas de agregar estilo css al archivo:</b>
+                <br>
+                <br>
+                -1: referenciando la pagina de estilos por aparte: la mejor practica y es la
+                forma mas apropiada
+                <br>
+                <br>
+                -2: Utilizando las etiquetas <span class="etiquetas">style</span> <span class="etiquetas">style</span>
+                en el head. No es una buena practica
+                cuando son muchas lineas de codigo, solo cuando son algunas pocas debido a que tu pagina se demoraria
+                mucho en cargar
+                mientras lee todas las lineas
+                <br>
+                <br>
+                -3: Como atributo de la etiqueta: es una mala practica y hay que evitarlo lo
+                mayor posible porque esto puede reescribir algunas lineas que esten en el
+                archivo de stilos y generar problemas
+            </p>
+            <br>
+
+            <div class="line" id="basicscss"></div>
+            <p class="title">Basicos de css</p>
+            <br>
+            <p class="info">
+                :root {
+                <br>
+                --color: #000;
+                <br>
+                }
+                <br>
+                (Asi se usan variables en css, se declaran arriba al inicio de los estilos y tiene que tener don giones
+                '--' se suele usar para colores o medidas)
+                <br>
+                (root hace referencia al punto de ruta de partida del html)
+                <br>
+                (Para usarlas se usa: var(--color))
+                <br>
+                <br>
+                * {
+                <br>
+                margin: 0;
+                <br>
+                padding: 0;
+                <br>
+                box-sizing: border-box;
+                <br>
+                }
+                <br>
+                (El asterisco es el selector universal, asi se le puede quitar o cambiar las propiedades que
+                el navegador trae por defecto. Aqui hace que se sumen el padding+margin+border y se resten al width, se
+                calcula automaticamente para asi no salirse del navegador y no tener que hacer scroll horizontal)
+                <br>
+                <br>
+                html {
+                <br>
+                font-size: 62.5%;
+                <br>
+                }
+                <br>
+                (Html tiene por defecto un size de 16px, por lo tanto asi quedaria con 10 y es mas facil de trabajar)
+            </p>
+            <br>
+
+            <div class="line" id="especificidad"></div>
+            <p class="title">Especificidad</p>
+            <br>
+            <p class="info">
+                Al usar css se tiene un orden en la forma de leer un estilo:
+                <br>
+                <br>
+                -1: Primero se toma en cuenta la importancia, atributo !important o estilos del navegador
+                <br>
+                -2: Segundo se toma en cuenta la especificidad
+                <br>
+                -3: Por ultimo se toma el orden en las fuentes {si una etiqueta tiene 2 atributos con diferentes medidas
+                se toma en cuenta el que este mas abajo en el documento}
+                <br>
+                <br>
+                <br>
+                -La especificidad es la manera mediante la cual los navegadores deciden qué valores de una
+                propiedad CSS son más relevantes para un elemento y por lo tanto la aplican
+                <br>
+                <br>
+                <b>Selectoores y su especificdad:</b>
+                <br>
+                <br>
+                !important: 5
+                <br>
+                <br>
+                inline styles: 4
+                <br>
+                <br>
+                #id: 3
+                <br>
+                <br>
+                .class: 2
+                <br>
+                <br>
+                tag: 1
+                <br>
+                <br>
+                <b>Ejemplo:</b>
+                <br>
+                <br>
+                <span class="etiquetas">h1 class='title' id='titulo'</span>
+                <br>
+                ....Titulo
+                <br>
+                <span class="etiquetas">h1</span>
+                <br>
+                <br>
+                .title {
+                <br>
+                color: blue;
+                <br>
+                }
+                <br>
+                <br>
+                #titulo {
+                <br>
+                color: red;
+                <br>
+                }
+                <br>
+                <b>Resultado = </b><span class="title" id="titulo">Titulo</span>
+                <br>
+                <br>
+                Nota:
+                <br>
+                -Es una mala practica usar mucho id en css, es mejor usar classes por la espeficidad y evitar
+                conflictos
+                <br>
+                -Al inspeccionar codigo en la pagina web, me muestra los estilos de mas importantes a
+                menos importantes, asi se a cual se le esta dando prioridad o porque hay errores
+            </p>
+            <br>
+
+            <div class="line" id="medidasyherencia"></div>
+            <p class="title">Medidas, herencia y combinadores</p>
+            <br>
+            <p class="info">
+                <b>Tipos de medidas:</b>
+                <br>
+                <br>
+                <b>Medidas absolutas</b>
+                <br>
+                No cambia el tamaño respecto a la pantalla que se use o al tamaño de esta:
+                <br>
+                <br>
+                mm = milimetros
+                <br>
+                cm = centimetros
+                <br>
+                in = pulgada
+                <br>
+                pc = picas
+                <br>
+                px = pixeles
+                <br>
+                <br>
+                <b>Medidas relativas</b>
+                <br>
+                Estas medidas heredan el tamaño o se basan en algun tamaño que se alla seleccionado, el
+                valor ira cambiando segun la pagina cambie de tamaño:
+                <br>
+                <br>
+                % = porcentaje
+                <br>
+                em = em
+                <br>
+                rem = root em
+                <br>
+                vw = viewport width
+                <br>
+                vh = viewport height
+                <br>
+                <br>
+                1rem = 16px, esto porque rem coge el valor de la ruta que estemos usando y el navegador siempre le va
+                a dar un valor de 16px al texto en html, almenos que se modifique con el selector de html en la hoja
+                de estilos
+                <br>
+                <br>
+                <b>Agregar valores:</b>
+                <br>
+                margin: 5px 0 5px 0;
+                <br>
+                <br>
+                -Con 4 argumentos es : top, right, bottom, left
+                -Con 3 argumentos es: top, right & left, bottom
+                <br>
+                <br>
+                -Con 2 argumentos es: top & bottom, right & left
+                <br>
+                <br>
+                <b>Nota:</b>
+                <br>
+                -Hay una forma de hacer que CSS calcule el tamaño de un elemento restándole cierta cantidad.
+                <br>
+                <br>
+                Ejemplo: colocar 2 cajas dentro de un div y quieres que cada una tome el 50% de ancho,
+                pero que cada una tenga un margen de 10px.
+                <br>
+                <br>
+                .caja-hijo {
+                <br>
+                width: calc(50% - 20px);
+                <br>
+                }
+                <br>
+                <br>
+                <br>
+                <b>Herencia:</b>
+                <br>
+                <br>
+                Las etiquetas pueden heredar estilos de sus padres dependiendo de la etiqueta, hay algunas etiquetas que
+                tienen sus propios estilos y por lo tanto aveces la herencia no funciona. Si yo aplico un tamaño de
+                letra
+                a un contenedor con un h1 y un p, solo se le aplicara al parrafo porque h1 tiene unos estilos por
+                defecto
+                <br>
+                <br>
+                -Para aplicarle el estilo del contenedor se usa: h1 {font-size: inherit;} y asi hereda el valor de su
+                padre
+                <br>
+                <br>
+                <br>
+                <b>Combinadores:</b>
+                <br>
+                <br>
+                -Hermano adyacente: h2 + p {
+                <br>
+                Toda etiuqueta p que este cerca de un h2 aplicale estos estilos, de arriba hacia abajo en el html y
+                tiene que estar el h2 encima del p, no puede haber otra etiqueta entre ellas
+                <br>
+                }
+                <br>
+                <br>
+                -General sibling: h2 ~ p {
+                <br>
+                Toda etiqueta p que sea hermano general de h2 aplicale estos estilos, aqui lo unico que
+                importa es si estan en el mismo contenedor de caja (en un div, un formulario, etc) y no importa si hay
+                otras lineas o etiquetas que los separen con tal de estar en el mismo contenedor
+                <br>
+                }
+                <br>
+                <br>
+                -Child: div > p {
+                <br>
+                Toda etiqueta p que sea hijo de un div aplicale estos estilos, aqui se va a aplicar a todos los p que
+                esten
+                dentro de un div, tiene que ser espcificamente el padre directo, no puede estar detro del div y despues
+                dentro de otra
+                etiqueta
+                <br>
+                }
+                <br>
+                <br>
+                desendencia: div p {
+                <br>
+                todas las etiquetas p que esten adentro de un div sin importas en que otras etiquetas esten o cual
+                sea su padre directo, es aplicar estilo a un hijo sin importar que mas halla, solo importa que este el p
+                en alguna parte de
+                un contenedor div
+                <br>
+                }
+            </p>
+            <br>
+
+            <div class="line" id="pseudo"></div>
+            <p class="title">Pseudoclases y pseudoelementos</p>
+            <br>
+            <p class="info">
+                <b>Pseudoclases:</b> Definen el estilo de un estado especial de un elemento, se usa con :
+                <br>
+                <br>
+                <b>Pseudoelementos:</b> Definen el estilo de una parte especifica de un elemento, se usa con ::
+                <br>
+                <br>
+                <b>Mas usados:</b>
+                <br>
+                <br>
+                etiqueta:hover {Cambia el estilo al tener el mouse encima}
+                <br>
+                <br>
+                etiqueta:active {Cambia el estilo al oprimir la etiqueta o estar activa}
+                <br>
+                <br>
+                etiqueta::after {Agrega estilo o contenido despues de esta etiqueta}
+                <br>
+                <br>
+                <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes">Pseudoclases</a>
+                <br>
+                <br>
+                <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements">Pseudoelementos</a>
+            </p>
+            <br>
+
+            <div class="line" id="position"></div>
+            <p class="title">Position</p>
+            <br>
+            <p class="info">
+                <b>Static:</b>
+                <br>
+                -Posicion estatica, la que esta por defecto
+                <br>
+                <br>
+                <b>Relative:</b>
+                <br>
+                -Posicion relativa, se el agrega top o bottom o left o right para asi mover el elemeneto de manera
+                relativa
+                <br>
+                <br>
+                <b>Absolute:</b>
+                <br>
+                -Absolute hace que el elemento es removido del flujo del documento, se le agrega bottom o top o right o
+                left para asi especificar
+                en que parte quiero el elemento, si no se le pone estos atributos el elemento se va a sobreponer a sus
+                hermanos, asi podria ponerse
+                encima del hermano de abajo debido a que este ya se sale del flujo del documento y se sobrepone
+                <br>
+                <br>
+                <br>
+                -La diferencia entre absolute y relative es que el bottom, top, left y right del absolute es respecto a
+                la pagina,
+                en relative es respecto a su etiqueta, ejemplo: el bottom de absolute es el fondo de la pagina, el de
+                relative
+                es la parte de abajo de su propio contenedor, el bottom border.
+            </p>
+            <br>
+
+            <div class="line" id="display"></div>
+            <p class="title">Display</p>
+            <br>
+            <p class="info">
+                <b>Block:</b>
+                <br>
+                -Este hace que los elementos ocupen el 100% del width de la caja aun asi el contenido sea pequeño, este
+                es el valor por defecto
+                del display
+                en las etiquetas div y p. Al ocupar el 100% del width hace que los elementos se pongan de forma vertical
+                ya que estan uno debajo
+                del otro
+                <br>
+                <br>
+                <b>Inline:</b>
+                <br>
+                -hace que los elementos se pongan uno al lado del otro si hay espacio, cuando la pagina o la seccion no
+                tenga mas espacios
+                estos se pondran abajo nuevamente uno al lado del otro. Cuando se usa este aributo no se puede usar
+                margin o padding en la parte de
+                arriba o abajo, tampoco usar width o height, no va a poder crecer porque esto es de forma lineal por lo
+                tanto el codigo ignorara estos atributos
+                <br>
+                <br>
+                <b>Inline-block:</b>
+                <br>
+                -Es una fusion de los valores block e inline, se ocupa el 100% del width del contenido y si hay espacio
+                permite que otros
+                hermanos se pongan al lado, permite manipular el width y el height o tambien el padding o el margin
+                <br>
+                <br>
+                <br>
+                <b>Dislplay: flex;</b>
+                <br>
+                <br>
+                -Flex hace lo mismo que display inline-block pero se lo aplica a sus hijos contenedores, hace que sean
+                flexibles y les cambia el display por defecto que traen, coloca a sus hijos en la direccion de row por
+                defecto
+                y se puede cambiar con el atributo de flex-direction: row/column/etc
+                <br>
+                <br>
+                flex-wrap: wrap; {hace que cuando la pantalla se encoja, los elementos pasen a la fila de abajo mediante
+                se acabe el espacio, hace que sean flexibles al reacomodarse}
+                <br>
+                <br>
+                Justify-content: center; {Centra los elementos en la misma direccion del flex}
+                <br>
+                <br>
+                Align-items: center; {centra los elementos en la direccion opuesta a la direcion del flex}
+                <br>
+                <br>
+                flex-basis: 5rem; {especifíca la base flexible, el tamaño inicial de un elemento flexible}
+                <br>
+                <br>
+                order: 1; {Define el order para mostrar los elementos o contenedores hermanos, si a alguno no se le
+                asigno un numero de order
+                ent estos estaran al inicio en la izquierda y despues apareceran los que si tienen un order acorde a su
+                numero}
+                <br>
+                <br>
+                flex-grow: 1; {hace que este contenedor rellene el espacio sobrante del contenedor padre, se expandira
+                en su ancho o largo en la misma
+                direccion del flex (si esta horizonotal, se expandira horizontal). El numero representa la importancia
+                de ocupar el
+                espacio, mientras mas grande sea el numero mas espacio ocupara rellenando el espacio sobrante del
+                contenedor padre
+                (si hay uno con flex-grow:2; este va a rellenar 2 tercios del espacio sobrante del contenedor padre y
+                el que
+                tenga flex-grow: 1; va a rellenar 1 tercio, y asi susesibamente)}
+                <br>
+                <br>
+                <b>Usar el espacio del contenedor padre con los hijos:</b>
+                <br>
+                -Sirve tanto para justify-content o para align-items: <a href="https://imgur.com/a/RG1MQdD">
+                    Gif ilustrativo
+                </a>
+            </p>
+            <br>
+
+            <div class="line" id="quires"></div>
+            <p class="title">Media quires y Responsive design</p>
+            <br>
+            <p class="info">
+                -Responsive design es la forma de adaptar el contenido de la pagina en diferentes tamaños y se hace
+                aplicando estilos con media quires, hay muchos patrones para acomodar los elementos como: mostly fluid,
+                layout shifter, column drop, etc...
+                <br>
+                <br>
+                -Los media quires son la forma de implementar estilo a nuestro codigo definiendo un tamaño de la
+                pantalla, esto hace que el responsive design sea efectivo en todos los dispositivos
+                <br>
+                <br>
+                -Se recomienda usar minimo 3 archivos diferentes para cada enfoque: styles.css, tablet.css y desktop.css
+                <br>
+                <br>
+                -Los enlaces a los archivos con media quires deben de ir en la parte del head de menor a mayor (Primero
+                el de mobile, despues tablet y abajo el de desktop)
+                <br>
+                <br>
+                -Mobile first: Siempre se tiene que diseñar primero en la pantalla de dispositivos moviles, de ahi ir
+                ampliando hasta las pantallas mas grandes
+                <br>
+                <br>
+                -Una buena forma de implementar media quires es: Hacer de 300px-600px para mobile, despues para tablets
+                uno de
+                600px-1000px, otro para computadores de 1000px-2000px y un ultimo para pantallas mas largas de +2000px
+                <br>
+                <br>
+                -Una buena pratica para que la pagina no se rompa con monitores muy grandes es poniendole un max-width:
+                3200px;
+                a la etiqueta de html
+                <br>
+                <br>
+                <b>implementar media quires:</b>
+                <br>
+                <br>
+                <span class="etiquetas">Head</span>
+                <br>
+                <span class="etiquetas">link rel="stylesheet" href="./css/styles.css"</span>
+                <br>
+                <span class="etiquetas">link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width:
+                    600px)"</span>
+                <br>
+                <span class="etiquetas">link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:
+                    1000px)"</span>
+                <br>
+                <span class="etiquetas">link rel="stylesheet" href="./css/max.css" media="screen and (min-width:
+                    2000px)</span>
+                <br>
+                <span class="etiquetas">Head</span>
+                <br>
+                <br>
+                <br>
+                <b>Imagenes responsive:</b>
+                <br>
+                <br>
+                <span class="etiquetas">Picture</span>
+                <br>
+                <span class="etiquetas">source media="(min-width: 1300px)" srcset="./pics/grande.jpg"</span>
+                <br>
+                <span class="etiquetas">source media="(min-width: 1000px)" srcset="./pics/mediano.jpg"</span>
+                <br>
+                <span class="etiquetas">img src="./pics/pequeno.jpg" alt="Imagen pequeña de fuji"</span>
+                <br>
+                <span class="etiquetas">Picture</span>
+                <br>
+                <br>
+                -La etiqueta picture permite cargar imagenes responsive dependiendo del viewport, asi poder cargar la
+                mejor imagen
+                dependiendo del dispositivo y no cargar tanta informacion y peso de imagenes.
+                <br>
+                <br>
+                -La etiqueta source es para definir la imagen del viewport, es como si se remplazara el atributo src en
+                la etiqueta
+                de img, por eso solo se le pone css a la etiqueta img y se aplica a todas las imagenes dependiendo del
+                tamaño de la pantalla
+                <br>
+                <br>
+                -Se debe poner desde la etiqueta con el viewport mas grande hasta la mas pequeña,
+                es decir que se pone la etiqueta con la imagen mas grande
+                y abajo la segunda mas grande y asi sucesivamente, si no no funciona
+                <br>
+                <br>
+                -Todo esto ayuda al rendimiento de la pagina para que la pagina no se quede cargando tanto ya que el
+                navegador va a tener
+                varias opciones acorde al tamaño del usuario y asi tener una mejor renderisacion
+                <br>
+                <br>
+                -En imagenes el width: 100%; es la mejor manera de responsive
+            </p>
+            <br>
+
+            <div class="line" id="bad"></div>
+            <p class="title">Malas practicas</p>
+            <br>
+            <p class="info">
+                Utilizar tanto id en CSS
+                <br>
+                <br>
+                Utilizar el !important
+                <br>
+                <br>
+                Utilizar la etiqueta style dentro del archivo html
+                <br>
+                <br>
+                Utilizar el atributo style dentro de las etiquetas html
+                <br>
+                <br>
+                Utilizar div para contener todo ignorando los header, nav, section, article, etc.
+                <br>
+                <br>
+                No utilizar la etiqueta form para hacer formularios
+                <br>
+                <br>
+                Utilizar las etiquetas select y option para hacer selectores o menús desplegables.
+                <br>
+                <br>
+                No nombrar el primer archivo html del proyecto como index.html
+                <br>
+                <br>
+                No tener archivos .css para cada pantalla de un proyecto.
+                <br>
+                <br>
+                Tener todo el css junto en un solo archivo.
+                <br>
+                <br>
+                No ponerle el atributo alt a una imagen
+                <br>
+                <br>
+                Poner imágenes dentro de div en vez de <span class="etiquetas">figure</span>
+                <br>
+                <br>
+                Utilizar textos solo en mayúscula en HTML, en vez de utilizar el atributo de CSS, text-transform, con el
+                valor uppercase. Ya que al hacer esto pareciera que estuvieras gritando.
+                <br>
+                <br>
+                Poner videos que se reproduzcan solos.
+                <br>
+                <br>
+                No optimizar las imágenes.
+                <br>
+                <br>
+                No tener cuidado de cual es el formato ideal para las imágenes y su respectivo peso.
+                <br>
+                <br>
+                No tener cuidado con la respectiva semántica de HTML, y con la sintaxis adecuada para CSS.
+                <br>
+                <br>
+                No cerrar las etiquetas que se cierran en sí mismas como <span class="etiquetas">br</span>
+                <br>
+                <br>
+                No comentar partes esenciales de tu código.
+                <br>
+                <br>
+                No poner la etiqueta meta name=”robots” en tu proyecto para que los navegadores los puedan ubicar mejor.
+                <br>
+                <br>
+                No usar la etiqueta meta name=”viewport” para hacer tu proyecto responsive.
+                <br>
+                <br>
+                No poner el atributo autocomplete=”” en los campos de tu formulario para hacerle la vida más fácil al
+                usuario
+                <br>
+                <br>
+                No usar el atributo required en los campos obligatorios de tu formulario como una primera capa de
+                seguridad
+            </p>
+            <br>
+
+            <div class="line" id="recursos"></div>
+            <p class="title">Recursos y complementos</p>
+            <br>
+            <p class="info">
+                -Simbolos con unicode: <a href="https://www.toptal.com/designers/htmlarrows/">Aqui</a>
+                <br>
+                <br>
+                -Google fonts: <a href="https://fonts.google.com/">Aqui</a>
+                <br>
+                <br>
+                -Colores html con hexadecimal: <a href="https://htmlcolorcodes.com/es/">Aqui</a>
+                <br>
+                <br>
+                -Escoger contraste de colores: <a href="https://www.notion.so/Contraste-en-Web-c5f242b0cc114401aaca8b615d3a8e32">Aqui</a>
+                <br>
+                <br>
+                -Todos las etiquetas de html: <a href="https://allthetags.com/">Aqui</a>
+                <br>
+                <br>
+                -Atributos y valores de css3: <a href="https://i.emezeta.com/weblog/css3-cheatsheet/css3-cheatsheet-2017-emezeta.pdf">Aqui</a>
+                <br>
+                <br>
+                -Juego de selectores: <a href="https://flukeout.github.io/#">Aqui</a>
+                <br>
+                <br>
+                -Juego de display flex: <a href="https://flexboxfroggy.com/#es">Aqui</a>
+                <br>
+                <br>
+                -Pseudo clases: <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes">Aqui</a>
+                <br>
+                <br>
+                -Pseudo elementos: <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements">Aqui</a>
+                <br>
+                <br>
+                -Box-shadow: <a href="https://developer.mozilla.org/es/docs/Web/CSS/box-shadow">Aqui</a>
+                <br>
+                <br>
+                -Degradado en css: <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Images/Using_CSS_gradients">Aqui</a>
+                <br>
+                <br>
+                -Neon con css: <a href="https://www.desarrollolibre.net/blog/css/efecto-de-texto-neon-con-solo-css">Aqui</a>
+                <br>
+                <br>
+                -Tipos de inputs de un form: <a href="https://www.w3schools.com/html/html_form_input_types.asp">Aqui</a>
+                <br>
+                <br>
+                -Valores del autocomplete en form: <a
+                    href="https://runebook.dev/es/docs/html/attributes/autocomplete#:~:text=HTML%20de%20autocompletar-,El%20atributo%20de%20autocomplete%20HTML%20permite%20a%20los%20desarrolladores%20web,se%20espera%20en%20el%20campo.">Aqui</a>
+                <br>
+                <br>
+                -Breakpoints y tamaño de dispositivos: <a href="https://www.mydevice.io/#compare-devices">Aqui</a>
+                <br>
+                <br>
+                -Comprimir imagenes: <a href="https://tinypng.com/">Aqui</a>
+                <br>
+                <br>
+                -Eliminar metadatos de imagenes: <a href="https://www.verexif.com/">Aqui</a> 
+                <br>
+                <br>
+                -Resumen de etiquetas de Platzi: <a href="https://static.platzi.com/media/public/uploads/sheet-html_e27f26e2-8669-437b-84dd-912932693263.pdf">Aqui</a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer-p">That's it</p>
+    </footer>
+</body>
+
+</html>
