@@ -48,6 +48,15 @@
             <a href="#eventsforms">
                 <div class="smoth-scrolls">Evento y formularios</div>
             </a>
+            <a href="#clasesyobj">
+                <div class="smoth-scrolls">Clases y objetos en js</div>
+            </a>
+            <a href="#servidornode">
+                <div class="smoth-scrolls">Usar un servidor con express en pc</div>
+            </a>
+            <a href="#circuitoselec">
+                <div class="smoth-scrolls">Circuitos electronicos</div>
+            </a>
         </section>
 
         <section class="info__container--main">
@@ -115,6 +124,11 @@
                 (es como un print pero este si se vera fisicamente en el documento, se pueden usar variables)}
                 <br>
                 <br>
+                elemento.innerHTML = 'Hello world'; {innerHTML es la forma adecuada de implementar texto en el html,
+                doc.write es una mala practica. Esto sirve para poner texto o elementos en etiquetas vacias que estan en
+                el html, es un atributo que se le da un vaor de string}
+                <br>
+                <br>
                 console.log('string') {Es el print de javascript, sirve para ver en consola variables o texto que ayudan
                 al proceso de depuracion del codigo (Tambien sirve para ver como esta escrito un objeto por dentro y
                 sacar los metodos y atributos del propio objeto)}
@@ -140,9 +154,54 @@
                 <br>
                 document.getElementById('id'); {Asi se obtiene una etiqueta html por el nombre de un id, se puede
                 guardar en una variable}
+                <br>
+                <br>
+                var variable = {
+                <br>
+                <br>
+                edad: 19,
+                <br>
+                genero; 'masculino',
+                <br>
+                altura: 1.90
+                <br>
+                <br>
+                Esta es la forma de crear un tipo de diccionario en js, es un objeto y usa la estructura de json.
+                <br>
+                }
+                <br>
+                <br>
+                Math.random(); {Genera un aleatorioentre (0, 1) }
+                <br>
+                <br>
+                Math.floor(numero); {Redondea un numero hacia el entero de abajo}
+                <br>
+                <br>
+                Math.ceil(numero); {Redondea un numero hacia el entero de arriba}
+                <br>
+                <br>
+                Math.floor(Math.random() * (max - min +1)) + min; {Ecuacion para generar un intervalo definido con
+                aleatorios}
+                <br>
+                <br>
+                <br>
+                <b>Arrays;</b>
+                <br>
+                var lista = []; {Esto es un array en js, es como una lista en python}
+                <br>
+                <br>
+                lista[0]; {Acceder al indice}
+                <br>
+                <br>
+                lista['nombre'] = 'Simon'; {En js se pueden crear indices con texto, el elemento no se agrega a la lista
+                normal pero tendra un indice de texto para acceder al valor, es como un diccionario pero se llama array
+                asociativo}
+                <br>
+                <br>
+                lista.push('algo'); {Agrega el elemento a el array en la ultima posicion}
             </p>
             <br>
-                
+
             <div class="line" id="masjs"></div>
             <p class="title">Ciclos funciones y condicionales</p>
             <br>
@@ -174,8 +233,10 @@
                 <br>
                 <br>
                 function nombre(parametro1, parametro2){
-                    <br>
-                    <br>
+                <br>
+                <br>
+                return algo;
+                <br>
                 }
                 <br>
                 <br>
@@ -184,24 +245,64 @@
                 <br>
                 <br>
                 whlie(True){
-                    <br>
+                <br>
                 }
                 <br>
                 <br>
-                for(i = 0; i != 300; i++){
-                    <br>
+                for(var i = 0; i != 300; i++){
+                <br>
                 }
                 <br>
                 <br>
-                <b>Ciclo do while: </b>Este ciclo en javscript es diferente a un while normal, la diferencia es que aquí la secuencia de código se ejecuta al menos una vez, porque la comprobación de la condición se realiza al terminar la primera vuelta del bucle.
+                for(var i in lista){
+                <br>
+                Con 'in' la variable i es el iterador del iterable, va a reemplasar el <b>indice</b>
+                <br>
+                }
+                <br>
+                <br>
+                for(var i of lista){
+                <br>
+                Con 'of' la variable i es el iterador del iterable, va a reemplasar el <b>valor u objeto</b>
+                <br>
+                }
+                <br>
+                <br>
+                <b>Ciclo do while: </b>Este ciclo en javscript es diferente a un while normal, la diferencia es que aquí
+                la secuencia de código se ejecuta al menos una vez, porque la comprobación de la condición se realiza al
+                terminar la primera vuelta del bucle.
                 <br>
                 <br>
                 <b>do</b> {
-                    <br>
-                    ....codigo;
-                    <br>
+                <br>
+                ....codigo;
+                <br>
                 } <b>while</b>(condicion)
-                
+                <br>
+                <br>
+                <br>
+                <b>Switch:</b>
+                <br>
+                <br>
+                switch(numero){
+                <br>
+                <br>
+                case 1:
+                <br>
+                ....codigo;
+                <br>
+                ....break;
+                <br>
+                <br>
+                case 2:
+                <br>
+                ....codigo;
+                <br>
+                ....break;
+                <br>
+                <br>
+                }
+            </p>
             <br>
 
             <div class="line" id="basicosprogram"></div>
@@ -216,6 +317,16 @@
                 <br>
                 <br>
                 depurar = proceso de arreglaar un codigo, debuggin
+                <br>
+                <br>
+                -Por buenas practicas es mejor poner el nombre de un objeto con la primera letra en mayusc
+                <br>
+                <br>
+                Un diagrama de flujo nos permite hacer una representación de los pasos que debe seguir nuestro
+                algoritmo.
+                <br>
+                <br>
+                IDE = Integrated Development Evironment 
             </p>
             <br>
 
@@ -258,6 +369,9 @@
                 lienzo.strokeStyle = 'red'; {Definir el color }
                 <br>
                 <br>
+                lienzo.lineWidth = 3; {Define el ancho de la linea en px}
+                <br>
+                <br>
                 lienzo.moveTo(100, 100); {Definir el origen del trazo}
                 <br>
                 <br>
@@ -280,6 +394,14 @@
                 Un evento es un suceso que ocurre en determinado momento: click, hover, focus, pulsar una teclam etc...
                 <br>
                 <br>
+                -La funcion se llama addEventListener y recibe 2 parametros, el tipo de evento y la funcion a invocar
+                cuando sucede el evento.
+                <br>
+                <br>
+                -Cuando la funcion del evento recibe un parametro, este tendra toda la nformacion del evento como un
+                objeto, por lo tanto se le puede hacer un console.log y mirar cuales son sus propiedades o atributos.
+                <br>
+                <br>
                 -Para que una funcion se invoque con un evento, se nesecita hacer esto:
                 <br>
                 <br>
@@ -288,12 +410,131 @@
                 variable.addEventListener('click', funcion);
                 <br>
                 <br>
-                -Para obtener algun valor o caracteristica de un formulario de html, se puede hacer un console.log al objeto y asi poder ver cuales son sus metodos y atributos, esto es aplicable pra cualquier etiqueta de html.
+                -Para obtener algun valor o caracteristica de un formulario de html, se puede hacer un console.log al
+                objeto y asi poder ver cuales son sus metodos y atributos, esto es aplicable pra cualquier etiqueta de
+                html.
+                <br>
+                <br>
+                <br>
+                <b>Tipos de eventos:</b>
+                <br>
+                <br>
+                "click" {Al hacer click}
+                <br>
+                <br>
+                "keydown" {Al presionar cualquier tecla}
+                <br>
+                <br>
+                "keyup" {Al soltar cualquier tecla}
+                <br>
+                <br>
+                "mousedown" {Cuandoo se pulsa el mouse, click}
+                <br>
+                <br>
+                "mousemove" {Cuando se mueve el mouse}
+                <br>
+                <br>
+                "mouseup" {Cuando se levanta el click del mouse}
+                <br>
+                <br>
+                "load" {Cuando carga algo, como una imagen}
+            </p>
+            <br>
+
+            <div class="line" id="clasesyobj"></div>
+            <p class="title">Clases y objetos en js</p>
+            <br>
+            <p class="info">
+                Una clase nos permite definir una colección de objetos permitiendo que estos posean los mismos atributos
+                y métodos.
+                <br>
+                <br>
+                (ver carpeta pokemon para saber de clases, objetos, atributos y metodos)
+            </p>
+            <br>
+
+            <div class="line" id="servidornode"></div>
+            <p class="title">Usar un servidor con express en pc</p>
+            <br>
+            <p class="info">
+                -Node js es una manera de correr Javascript del lado del servidor. {
+                Se requieren tener permisos de administrador para ejecutar el instalador y utilizar el Node}
+                <br>
+                <br>
+                -Versiones de Node JS:
+                <br>
+                <br>
+                LTS => Version mas estable, utilizada por la mayoría de los usuarios corporativos
+                <br>
+                Current => Contiene los últimos features.
+                <br>
+                <br>
+                - IPCONFIG(win) = IFCONFIG(Mac/Linux) => Visualizar la configuración de Red del computador, para ver la
+                ip
+                <br>
+                <br>
+                NPM => Sistema que ayuda a Node a instalar Librerías.
+                <br>
+                <br>
+                Instalar Servidor Express en el entorno de Node de manera global => npm install express -g
+                <br>
+                <br>
+                Require => Es una función que busca dentro del equipo las dependencias pertenecientes a Express y las
+                almacena en la instancia creada para el efecto
+                <br>
+                <br>
+                Request => Petición realizada al servidor.
+                <br>
+                <br>
+                Response => Respuesta del Servidor al Request enviado.
+                <br>
+                <br>
+                Listen (8080) => Pone el servidor en modo escucha, en el puerto 8080 en este ejemplo, el puerto es
+                personalizable.
+                <br>
+                <br>
+                En Windows especialmente el firewal puede presentar restricciones en cuanto a acceso a puertos, por lo
+                que en ocasiones puede haber navegación al servidor de manera local, mas no asi de manera remota, en ese
+                caso realizar la siguiente verificación de permisos:
+                INICIO/FIREWALL DE WINOWS/PERMITIR A UNA APLICACIÓN O CARACTERÍSTICA SU EJECUCIÓN/NODE JS SERVER
+                SIDEJAVASCRIPT.
+            </p>
+            <br>
+
+            <div class="line" id="circuitoselec"></div>
+            <p class="title">Circuitos electronicos</p>
+            <br>
+            <p class="info">
+                La electricidad es un flujo de electrones medido en voltajes y en amperimetro.
+                La electricidad es creada en plantas de energía y se almacena en las baterias (carro, celular, robots,
+                etc)
+                Se transmite por cables hasta la energía de tu casa.
+                <br>
+                <br>
+                Los circuitos electrónicos son la base de la tecnología moderna
+                <br>
+                <br>
+                Electricidad => Son el flujo constante de electrones a través de un cable. Se mide en voltaje y amperaje
+                <br>
+                <br>
+                Voltio => Intensidad con que la corriente se mueve por el cable.
+                <br>
+                <br>
+                Resistencia => Controla la intensidad de la corriente eléctrica, son medidas en Ohmios.
+                <br>
+                <br>
+                Circuito digital => Convierte la electricidad en 0 y 1.
+                <br>
+                <br>
+                Memoria RAM => Almacena los 0 y 1 mientras tenga energía
+                <br>
+                <br>
+                Discos Duros => Almacena los 0 y 1 aun sin energía
             </p>
             <br>
 
         </section>
-
+        
     </main>
 
     <footer>
