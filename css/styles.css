@@ -100,6 +100,16 @@ header a h1 {
     border-radius: 1.5rem;
 }
 
+.button-dev {
+    background: #000;
+    color: #e1e1e1;
+    font-size: 2rem;
+    height:4rem;
+    width: 70vw;
+    max-width: 27.5rem;
+    border-radius: 1.5rem;
+}
+
 .container__button--1:hover {
     background: #36b3c0;
     color: #000000;
