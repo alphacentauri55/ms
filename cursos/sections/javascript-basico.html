@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="A site about personal shit from Simon">
+    <title>Javascript basico</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="../../css/desktop.css" media="screen and (min-width: 850px)">
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html">
+            <h1>MY SH*T</h1>
+        </a>
+    </header>
+
+    <main class="info__container">
+        <br>
+        <br>
+        <h1 class="main__title">Javascript basico</h1>
+        <br>
+
+        <section class="sections-titles">
+            <a href="#intro">
+                <div class="smoth-scrolls">Que es javascript</div>
+            </a>
+            <a href="#varfunc">
+                <div class="smoth-scrolls">Variables, funciones y sintaxis</div>
+            </a>
+            <a href="#conceptos">
+                <div class="smoth-scrolls">Conceptos</div>
+            </a>
+            <a href="#parsenum">
+                <div class="smoth-scrolls">ParseInt vs Number</div>
+            </a>
+            <a href="#boolean">
+                <div class="smoth-scrolls">Booleanos</div>
+            </a>
+            <a href="#operadores">
+                <div class="smoth-scrolls">Tipos de operadores</div>
+            </a>
+            <a href="#random">
+                <div class="smoth-scrolls">Aleatorios con rango</div>
+            </a>
+            <a href="#array">
+                <div class="smoth-scrolls">Manipular arrays</div>
+            </a>
+            <a href="#objects">
+                <div class="smoth-scrolls">Objects</div>
+            </a>
+            <a href="#filtro">
+                <div class="smoth-scrolls">Filter y map</div>
+            </a>
+            <a href="#masfiltro">
+                <div class="smoth-scrolls">.find() .forEach() y .some()</div>
+            </a>
+        </section>
+
+        <section class="info__container--main">
+            <br>
+            <p class="title" id="intro">Que es javascript</p>
+            <br>
+            <p class="info">
+                -Javascript es un lenguaje interpretado, orientado a objetos, débilmente tipado y dinámico. Nace con la
+                necesidad de generar dinamismo en las páginas web y que a su vez los usuarios y las empresas pudieran
+                interactuar unos con otros.
+                <br>
+                <br>
+                <b>Debilmente tipado = se pueden hacer estas cosas:</b>
+                <br>
+                <br>
+                4 + "7"; // 47
+                <br>
+                4 * "7"; // 28
+                <br>
+                2 + true; // 3
+                <br>
+                false - 3; // -3
+                <br>
+                <br>
+                <br>
+                <b>Dinamico:</b>
+                <br>
+                <br>
+                -Corre directamente en la etapa de Runetime sin una etapa de compilación previa(compilar = traducir el
+                lenguaje de prog a binario). Esto permite probar nuestro código inmediatamente; pero también es lo que
+                hace que los errores se muestren hasta que se ejecuta el programa.
+                <br>
+                <br>
+                <br>
+                <b>Lenguaje interpretado: </b>
+                <br>
+                <br>
+                -El navegador lee linea por linea nuestro código el cuál le indica lo que tiene que hacer, sin la
+                necesidad de compilar. Todo esto es controlado por el motor de Javascript V8 del navegador
+                <br>
+                <br>
+                <br>
+                <b>Backwards compatible:</b>
+                <br>
+                <br>
+                -Todas las funciones nuevas que salen de Javascript no dañarán el trabajo ya hecho, pero no se podrá
+                utilizar en nuestro entorno de trabajo inmediatamente. Para solucionar esto está Babel que permite
+                utilizar las nuevas características del lenguaje pero lo transforma a una versión que el navegador pueda
+                entender.
+            </p>
+            <br>
+
+            <div class="line" id="varfunc"></div>
+            <p class="title">Variables, funciones y sintaxis</p>
+            <br>
+            <p class="info">
+                <b>Variables: </b>
+                <br>
+                <br>
+                <b>Tipos de datos: </b><a
+                    href="https://static.platzi.com/media/user_upload/CU01112E_1-f9d2b6fc-f60c-4bf4-a61d-6bf9df36b268.jpg">Aca</a>
+                <br>
+                <br>
+                Declarar: var nombre; {Var es para declarar variables globales que se pueden reinicializar, declarar con
+                const es para constantes}
+                <br>
+                <br>
+                Inicializar: nombre = 'Simon';
+                <br>
+                <br>
+                console.log('Edad: ${edad}'); {Esto es interpolar variables, se tiene que hacer con comiilas invertidas
+                ( ctrl + } ) }
+                <br>
+                <br>
+                <br>
+                <b>Funciones:</b>
+                <br>
+                <br>
+                function nombre(){
+                <br>
+                <br>
+                return 'Esta es una funcion declarativa';
+                <br>
+                }
+                <br>
+                <br>
+                var nombre = function(){
+                <br>
+                <br>
+                return 'Esta es una funcion expresiva';
+                <br>
+                }
+                <br>
+                <br>
+                -Con las funciones declarativas podemos mandar llamar la función antes de que ésta sea declarada, y con
+                la expresión de función, no, tendríamos que declararla primero, y después mandarla llamar.
+            </p>
+            <br>
+
+            <div class="line" id="conceptos"></div>
+            <p class="title">Conceptos</p>
+            <br>
+            <p class="info">
+                <b>Scope y Hoisting:</b>
+                <br>
+                <br>
+                -Hay que saber donde se declaran y se inicialisan las variables para asi entender el ambito de los
+                bloques de codigo, por buenas practicas es bueno declarar todas las funciones en la parte superior del
+                archivo, asi las variables globales pueden acceder a estas sin problema.
+                <br>
+                <br>
+                <br>
+                <b>Coercion implicita: </b>
+                <br>
+                -Es cuando el lenguaje nos ayuda a cambiar el tipo de valor. {Ej: 5 * "2" = 10}
+                <br>
+                <br>
+                <b>Coercion explicita: </b>
+                <br>
+                -Es cuando obligamos a que cambie el tipo de valor. {String(50)}
+            </p>
+            <br>
+
+            <div class="line" id="parsenum"></div>
+            <p class="title">ParseInt vs Number</p>
+            <br>
+            <p class="info">
+                <b>parseInt:</b>
+                <br>
+                -Analiza la cadena desde el primer dígito, hasta que encuentre algo que no sea dígito y devuelve lo que
+                haya analizado.
+                <br>
+                <br>
+                Ejemplo: parseInt(“123hui”); = 123
+                <br>
+                Ejemplo: parseInt(“hui123”); = NaN
+                <br>
+                Ejemplo: parseInt(“1hui23”); = 1
+                <br>
+                <br>
+                <b>Number: </b>
+                <br>
+                -Number: Busca convertir toda la cadena en un número, por lo que al encontrarse con un elemento que no
+                sea digito nos dara como resultado NAN (Not A Number).
+                <br>
+                <br>
+                Ejemplo: Number(“123hui”); = NaN
+                <br>
+                Ejemplo: Number(“123”); = 123
+            </p>
+            <br>
+
+            <div class="line" id="boolean"></div>
+            <p class="title">Booleanos</p>
+            <br>
+            <p class="info">
+                <b>Boolean:</b>
+                <br>
+                <br>
+                Boolean(0); //false
+                <br>
+                Boolean(null); //false
+                <br>
+                Boolean(NaN); //false
+                <br>
+                Boolean(undefined); //false
+                <br>
+                Boolean(""); //false
+                <br>
+                Boolean(); //false
+                <br>
+                <br>
+                Boolean(-1); //true {Cualquier numero diferente de 0}
+                <br>
+                Boolean("a"); //true {Cualquier caracter de un string, incluso un espacio}
+                <br>
+                Boolean([]); //true {aunque el array esté vacío}
+                <br>
+                Boolean({}); //true {aunque el objeto esté vacío}
+                <br>
+                Boolean(function(){}); //true {Cualquier función}
+            </p>
+            <br>
+
+            <div class="line" id="operadores"></div>
+            <p class="title">Tipos de operadores</p>
+            <br>
+            <p class="info">
+                <b> = </b>{Operador de asignacion}
+                <br>
+                <br>
+                <b>Operadores de comparacion:</b>
+                <br>
+                <br>
+                == {igual que, compara el valor incluso en diferentes tipos}
+                <br>
+                === {estrictamente igual que, compara el valor y el tipo de dato}
+                <br>
+                >, >=, <, <=<br>
+                    != {Diferente}
+                    <br>
+                    <br>
+                    <br>
+                    <b>Operadores logicos:</b>
+                    <br>
+                    <br>
+                    ! {Not}
+                    <br>
+                    && {And}
+                    <br>
+                    || {Or}
+                    <br>
+                    <br>
+                    <br>
+                    <b>Operador terniario, </b>comparacion simple en una linea:
+                    <br>
+                    <br>
+                    condicion ? verdadero : falso;
+                    <br>
+                    <br>
+                    Ejemplo:
+                    <br>
+                    var num = 5;
+                    <br>
+                    <br>
+                    num == 5 ? console.log('Soy un cinco') : console.log('No soy cinco');
+                    <br>
+                    <br>
+                    <b>Resultado = </b> 'Soy un cinco'
+            </p>
+            <br>
+
+            <div class="line" id="random"></div>
+            <div class="title">Aleatorios con rango</div>
+            <br>
+            <p class="info">
+                <b>Formula de un numero random entero con cualquier rango:</b>
+                <br>
+                <br>
+                Math.floor(Math.random() * (max - min +1)) + min;
+                <br>
+                <br>
+                <br>
+                <b>Numero random con cualquier rango de 0-n:</b>
+                <br>
+                <br>
+                Math.ceil(Math.random() * n) {Rango de 0 - n}
+                <br>
+                <br>
+                Math.floor(Math.random() * n) {Rango de 0 - n-1}
+            </p>
+            <br>
+
+            <div class="line" id="array"></div>
+            <p class="title">Manipular arrays</p>
+            <br>
+            <p class="info">
+                <b>var list = [];</b>
+                <br>
+                <br>
+                list.length; {Longitud sin contar desde 0}
+                <br>
+                <br>
+                list.push('simon'); {Añade al final el parametro en el array, pueden ser varios elementos}
+                <br>
+                <br>
+                list.unshift('simon'); {Agrega al incio el parametro en el array, pueden ser varios}
+                <br>
+                <br>
+                list.pop(); {Elimina el ultimo elemento del array}
+                <br>
+                <br>
+                list.shift(); {Elimina el primer elemento del array}
+                <br>
+                <br>
+                list.indexOf('simon'); {Devuelve el indice de el arametro en el array}
+            </p>
+            <br>
+
+            <div class="line" id="objects"></div>
+            <div class="title">Objects</div>
+            <br>
+            <p class="info">
+                var MiCarro = {
+                <br>
+                <br>
+                marca: 'Dodge',
+                <br>
+                modelo: 2022,
+                <br>
+                informacion: function(){
+                <br>
+                ....return `Carro marca ${this.marca}, modelo ${this.modelo}`;
+                <br>
+                }
+                <br>
+                <br>
+                };
+                <br>
+                <br>
+                MiCarro.modelo {2022, asi se usan los atributos}
+                <br>
+                <br>
+                MiCarro.informacion() {Asi se usan los metodos}
+                <br>
+                <br>
+                <br>
+                <b>Funcion constructora:</b>
+                <br>
+                <br>
+                function Auto(ma, mo){
+                <br>
+                <br>
+                this.marca = ma;
+                thiis.modelo = mo;
+                <br>
+                }
+                <br>
+                <br>
+                var carro = new Auto('Dodge', 2022); {Genera una nueva instancia de la funcion constructora}
+                <br>
+                <br>
+                Instancia: Generar un objeto que deriva de otro objeto.
+            </p>
+            <br>
+
+            <div class="line" id="filtro"></div>
+            <div class="title">Filter y map</div>
+            <br>
+            <p class="info">
+                <b>Filter: </b>Permite filtrar los elementos de un array y devolverlos en un nuevo array.
+                <br>
+                <b>Map: </b>Permite seleccionar atributos o propiedades para ponerlos en un nuevo array.
+                <br>
+                <br>
+                -Para ambos se nesecita generar un nuevo array dado que estos metodos no modifican el array original.
+                <br>
+                <br>
+                <b>Filter:</b>
+                <br>
+                <br>
+                var articulos = [
+                <br>
+                {nombre: 'Balon', costo: 50000},
+                <br>
+                {nombre: 'Bici', costo: 300000},
+                <br>
+                {nombre: 'Libro', costo: 80000},
+                <br>
+                {nombre: 'Camisa', costo: 80000},
+                <br>
+                {nombre: 'Zapato', costo: 400000},
+                <br>
+                ];
+                <br>
+                <br>
+                var filtrados = articulos.filter(function(elemento){
+                <br>
+                return elemento.costo <= 100000;
+                <br>
+                });
+                <br> 
+                <br> 
+                console.log(filtrados); 
+                <br>
+                <br>
+                <br>
+                <b>Map:</b>
+                <br>
+                <br>
+                var mapeados = articulos.map(function(elemento){
+                    <br>
+                    return elemento.nombre
+                    <br>
+                });
+                <br>
+                <br>
+                console.log(mapeados);
+            </p>
+            <br>
+
+            <div class="line" id="masfiltro"></div>
+            <p class="title">.find() .forEach() y .some()</p>
+            <br>
+            <p class="info">
+                <b>.find():</b>
+                <br>
+                <br>
+                var findeados = articulos.find(function(elemento){
+                    <br>
+                    return elemento.nombre === "Bici";
+                    <br>
+                });
+                <br>
+                <br>
+                -find retorna el primer elemento que encuentre de un array segun la condicion, filter retorna todos los elementos que encuentre, en vez de solo el primero.
+                <br>
+                <br>
+                <br>
+                <b>.forEach():</b>
+                <br>
+                <br>
+                articulos.forEach(function(elemento){
+                    <br>
+                    console.log(elemento.nombre);
+                    <br>
+                });
+                <br>
+                <br>
+                -Es lo mismo que map pero en este no es necesario crear un nuevo array
+                <br> 
+                <br> 
+                <br>
+                <b>.some():</b>
+                <br> 
+                <br>
+                var someados = articulos.some(function(elemento){
+                    <br>
+                    return elemento.costo <= 50000;
+                    <br>
+                }); 
+                <br>
+                <br>
+                -Solo devuelve un valor booleano, en caso de que la condicion exista en alguna parte del array, la variable sera = true
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer-p">That's it</p>
+    </footer>
+</body>
+
+</html>
