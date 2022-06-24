@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="A site about personal shit from Simon">
+    <title>Javascript practico</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="../../css/desktop.css" media="screen and (min-width: 850px)">
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html">
+            <h1>MY SH*T</h1>
+        </a>
+    </header>
+
+    <main class="info__container">
+        <br>
+        <br>
+        <h1 class="main__title">Javascript practico</h1>
+        <br>
+
+        <section class="sections-titles">
+            <a href="#agrucon">
+                <div class="smoth-scrolls">console.group() y π</div>
+            </a>
+            <a href="#htmltext">
+                <div class="smoth-scrolls">innerHTML vs innerText</div>
+            </a>
+            <a href="#onclick">
+                <div class="smoth-scrolls">onclick = "function()"</div>
+            </a>
+            <a href="#reduce">
+                <div class="smoth-scrolls">.reduce() .sort()</div>
+            </a>
+            <a href="#masinfo">
+                <div class="smoth-scrolls">Mas info y recursos</div>
+            </a>
+            
+        </section>
+
+        <section class="info__container--main">
+            <br>
+            <p class="title" id="agrucon">console.group() y π</p>
+            <br>
+            <p class="info">
+               <b>console.group('Titulo');</b>
+               <br>
+               <br>
+               console.log('1');
+               <br>
+               console.log('2');
+               <br>
+               console.log('2');
+               <br>
+               <br>
+               Asi se pueden agrupar consoles, en la terminal aparecera un titulo separando cada console
+               <br>
+               <br>
+               <b>console.groupEnd();</b>
+               <br>
+               <br>
+               <br>
+               <b>π:</b>
+               <br>
+               Math.PI {Asi se accede a pi, como con 12 decimales}
+            </p>
+            <br>
+
+            <div class="line" id="htmltext"></div>
+            <p class="title">innerHTML vs innerText</p>
+            <br>
+            <p class="info">
+                <b>innerHTML:</b>
+                <br>
+                <br>
+                -Obtiene todo el contenido html de un elemento
+                <br>
+                <br>
+                -Si permite ingresar etiquetas html
+                <br>
+                <br>
+                <br>
+                <b>innerText:</b>
+                <br>
+                <br>
+                -Obtiene todo el texto de un elemento html
+                <br>
+                <br>
+                -No permite insertar etiquetas html
+            </p>
+            <br>
+
+            <div class="line" id="onclick"></div>
+            <pp class="title">onclick y isNaN()</pp>
+            <br>
+            <p class="info">
+                <b>onclick = 'function()'</b>
+                <br>
+                <br>
+                -La propiedad onclick en las etiquetas html permite que se ejecute una funcion en nuestro archivo js al hacer click, generalmente se usa en botones.
+                <br>                                                             
+                <br>                                                             
+                <br>
+                <b>isNaN()</b>
+                <br>                                                           
+                <br>
+                -isNaN es una funcion de javascript que nos permite evaluar si algun dato es NaN o no, este devuelve un valor de true si es NaN, cuando si es un numero devuelve false.                            
+            </p>
+            <br>
+
+            <div class="line" id="reduce"></div>
+            <p class="title">.reduce() .sort()</p>
+            <br>
+            <p class="info">
+                <b>.reduce():</b>
+                <br>
+                <br>
+                -reduce es un metodo de arrays para poder agrupar los datos de este, sirve para sumarlos, multiplicarlos, etc...
+                <br>
+                <br>
+                const sum = list.reduce(function(acomulado = 0, elemento){
+                    <br>
+                    <br>
+                    return acomulado + elemento;
+                    <br>
+                    <br>
+                });
+                <br>
+                <br>
+                -La funcion anonima de reduce nesecita 2 parametros, el primero es el valor acomulado de cada iteracion y el segundo es el que recorre cada elemento
+                <br>
+                <br>
+                -El valor acomulado tiene que inicialisarse en 0 para que en la primera iteracion no ocurra ningun error
+                <br>
+                <br>
+                <br>
+                <b>.sort():</b>
+                <br>
+                <br>
+                list = list.sort(function (a, b) {
+                    <br>
+                    <br>
+                    return a - b;
+                    <br>
+                });
+                <br>
+                <br>
+                -El metodo sort hace que se ordene los elementos de forma ascendente, funciona igual que reduce con los 2 parametros pero este tiene una reglas de validacion interna que hacen que se ordene siguendo esta estructura en el return.
+                <br>
+                (Mas info sobre sort: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort">Aqui</a> )
+                <br>
+                <br>
+                <br>
+                
+            </p>
+            <br>
+            
+            <div class="line" id="masinfo"></div>
+            <p class="title">Mas info y recursos</p>
+            <br>
+            <div class="info">
+                variable = Object.entries(variable); {Convierte una variable con objetos a un aray con los objetos en cada posicion}
+                <br>
+                <br>
+                Metodo split de arrays: <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">Aca</a>
+                <br>
+                <br>
+                Metodo join de arrays: <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/join">Aca</a>
+            </div>
+            <br>
+
+       
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer-p">That's it</p>
+    </footer>
+</body>
+
+</html>
