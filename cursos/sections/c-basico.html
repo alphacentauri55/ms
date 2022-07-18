@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="A site about personal shit from Simon">
+    <title>C# basico</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="../../css/desktop.css" media="screen and (min-width: 850px)">
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html">
+            <h1>MY SH*T</h1>
+        </a>
+    </header>
+
+    <main class="info__container">
+        <br>
+        <br>
+        <h1 class="main__title">C# basico</h1>
+        <br>
+
+        <section class="sections-titles">
+            <a href="#intro">
+                <div class="smoth-scrolls">Conceptos</div>
+            </a>
+            <a href="#structura">
+                <div class="smoth-scrolls">Basicos de C#</div>
+            </a>
+            <a href="#datos">
+                <div class="smoth-scrolls">Tipos de datos</div>
+            </a>
+            <a href="#manipular">
+                <div class="smoth-scrolls">Manipular datos</div>
+            </a>
+            <a href="#ciclos">
+                <div class="smoth-scrolls">If y ciclos</div>
+            </a>
+        </section>
+
+        <section class="info__container--main">
+            <br>
+            <p class="title" id="intro">Conceptos</p>
+            <br>
+            <p class="info">
+                <b>namespaces: </b>Es la forma en que C# organiza el codigo. Tiene que representar algo significativo
+                para el programa, con un nombre único. Cada Namespace puede tener diferentes clases, tantas como
+                requiera el programa.
+                <br>
+                <br>
+                <b>Clases: </b>Las clases son plantillas para crear entidades, tantas como se requiera. Cada clase puede
+                tener diferentes métodos.
+                <br>
+                <br>
+                <b>Metodos: </b>La forma o manera de ejecutar funcionalidades del programa.
+                <br>
+                <br>
+                namespace helloworld {
+                <br>
+                <br>
+                ....class program {
+                <br>
+                <br>
+                ........static void main(string[] args){
+                <br>
+                <br>
+                ............Console.WriteLine('Hello world');
+                <br>
+                <br>
+                ........}
+                <br>
+                ....}
+                <br>
+                }
+            </p>
+            <br>
+
+            <div class="line" id="structura"></div>
+            <p class="title">Basicos de C#</p>
+            <br>
+            <p class="info">
+                <b>Cosas a tener en cuenta: </b>
+                <br>
+                <br>
+                -El nombre del namespace tiene que ser igual al nombre del archivo del archivo, se usa una convencion de
+                usar PascalCase, es decir, separar las palabras con la primera letra en mayusc
+                <br>
+                <br>
+                -La variable se declara con el tipo de dato. string name = 'Simon';
+                <br>
+                <br>
+                -Para los nombres de variables se usa el camelCase, la primera palabra en minuscula y el resto con la
+                primera letra en mayusc
+                <br>
+                <br>
+                -var (a, b, c) = (true, false, true); {Asi se declaran variables variables al tiempo, no es buena
+                practica por el var}
+                <br>
+                <br>
+                -Se puede declarar una variable con var igual que js, este sera cualquier tipo de dato cuando este
+                inicialisado pero no es una buena practica
+                <br>
+                <br>
+                -Se usa punto y coma para separar cada linea;
+                <br>
+                <br>
+                -No se pueden usar commillas simple '', se tiene que usar comillas dobles ""
+                <br>
+                <br>
+                <br>
+                <b>Operadores aritmeticos:</b>
+                <br>
+                <br>
+                + - * / % ++
+                <br>
+                <br>
+                <br>
+                <b>Operadores logicos:</b>
+                <br>
+                <br>
+                && , ||, !, ^ (Este es el XOR)
+                <br>
+                <br>
+                <br>
+                <b>Operadores relacionales:</b>
+                <br>
+                <br>
+                >, <,>=, <=, !=<br>
+                        <br>
+                        <br>
+                        <b>Metodos de uso frecuente:</b>
+                        <br>
+                        <br>
+                        Console.WriteLine('texto'); {Es el print de C#}
+                        <br>
+                        <br>
+                        string name = Console.ReadLine(); {ReadLine literlamente lee lo que hay en esa linea en la
+                        consola, por
+                        lo tanto al yo escribir algo se puede guardar en una variable}
+            </p>
+            <br>
+
+            <div class="line" id="datos"></div>
+            <p class="title">Tipos de datos</p>
+            <br>
+            <p class="info">
+                <b>Documentacion de tipo de datos en C#: </b><a
+                    href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">Aqui</a>
+                <br>
+                <br>
+                int {Numeros enteros, el rango es de 4 bytes}
+                <br>
+                <br>
+                long {Numeros de enteros, de 8 bytes}
+                <br>
+                <br>
+                uint {Numeros enteros positivos}
+                <br>
+                <br>
+                float {Numeros decimales, de 6 a 7 digitos, 4 bytes}
+                <br>
+                (se tiene que poner una f al final, float a = 5.5f;)
+                <br>
+                <br>
+                double {Numeros decimales, de 15 digitos, 8 bytes}
+                <br>
+                <br>
+                bool {true or false}
+                <br>
+                <br>
+                char {Un unico caracter}
+                <br>
+                <br>
+                string {Secuencia de caracteres, texto, 2 bytes por caracter}
+                <br>
+                <br>
+                <b>Casteo Implícito: </b>Cuando este valor lo vas a meter en un tipo ded ato que es mas grande, lo hace
+                automaticamente.
+                <br>
+                int hacia long
+                <br>
+                <br>
+                <b>Casteo Explicito: </b>Lo tenemos que hacer manualmente como progrmadores, porque C# “teme” perder
+                información. Nos va tocar ejecutar manualmente el casteo.
+                <br>
+                double hacia int
+            </p>
+            <br>
+
+            <div class="line" id="manipular"></div>
+            <p class="title">Manipular datos</p>
+            <br>
+            <p class="info">
+                <b>Converir el tipo de dato: </b>Todos los tipos de datos en C# poseen el método Parse que convierte una
+                cadena de caracteres en su tipo de dato. La clase Convert posee varios métodos para convertir una cadena
+                de caracteres en varios tipos de datos:
+                <br>
+                <br>
+                int.Parse(variable);
+                <br>
+                Convert.ToInt16(variable);
+                <br>
+                Convert.ToInt32(variable);
+                <br>
+                Convert.ToInt64(variable); {Los numeros son para especificar los <b>BITS</b>}
+                <br>
+                <br>
+                <br>
+                <b>Concert vs Parse: </b>
+                <br>
+                <br>
+                -Ambas se pueden usar para convertir datos de un tipo a otro.
+                <br>
+                <br>
+                Convert pude manejar valores NULL retornando un 0.
+                <br>
+                <br>
+                Parse no puede manejar valores NULL y muestra un error (ArgumentNullException)
+                <br>
+                <br>
+                <br>
+                <b>Strings:</b>
+                <br>
+                <br>
+                - $"La variable es {variable]" {Interpolar variables}
+                <br>
+                <br>
+                - \n para salto de linea, \t para tabulacion
+                <br>
+                <br>
+                <br>
+                <b>Arrays:</b>
+                <br>
+                <br>
+                string[] coffeType = new string[] {"Americano", "Expresso", "Largo", "Latte"};
+                <br>
+                <br>
+                -Solo se puede usar datos del mismo tipo y asi es la estructura.
+                <br>
+                <br>
+                coffeType[2] = "Large"; {Asi se modifica una posicion y se reemplaza}
+                <br>
+                <br>
+                Sin especificar número de espacios:
+                <br>
+                int[] array1;
+                <br>
+                <br>
+                Declarando numero de espacios, se inicializa el array con el numero de espacios mediante new:
+                <br>
+                int[] array2 = new int[5];
+                <br>
+                <br>
+                Numero de espacios y valores, establecemos el numero de espacios y el valor de cada uno en la misma
+                declaración:
+                <br>
+                int[] array3 = new int[3] { 3, 5, 10};
+                <br>
+                <br>
+                Sin especificar numero de espacios, el numero de espacios del array de define mediante el numero de
+                valores en la declaración.
+                <br>
+                int[] array4 = { 4, 9, 5, 1 };
+                <br>
+                <br>
+                <br>
+                <b>Listas:</b>
+                <br>
+                <br>
+                List<string> studentNames = new List<string>(}
+                <br>
+                <br>
+                studentNames.Add("Simon");
+                <br>
+                <br>
+                studentNames.Remove("Simon");
+                <br>
+                <br>
+                studentNames.RemoveAt(0);
+                <br>
+                <br>
+                -El metodo .Add solo recibe un elemento para añadir
+                <br>
+                <br>
+                -Las listas cumplen la misma funcionalidad que un array almacenar información. Los array lo utilizaremos para almacenar información que no cambiará o será en casos particulares. En cambio una Lista se utilizará para la información que se vaya modificando constantemente.
+                <br>
+                <br>
+                <br>
+                <b>Metodos:</b>
+                <br>
+                <br>
+                Random rnd = new Random();
+                <br>
+                Console.WriteLine($"Radom number: {rnd.Next(5, 55)}");
+                <br>
+                <br>
+                -rnd es una instancia de la clase Random, esta instancia tendra todos los metodos y propiedades de la clase 
+                <br>
+                <br>
+                -Next() es un metodo de la clase Random, como rnd es una istancia de la clase Random, se puede hacer uso de todos sus metodos y propiedades 'publicas'.
+                <br>
+                <br>
+                <b>Creear tus propios metodos: </b><a href="https://platzi.com/clases/2198-introduccion-csharp/36849-como-crear-tus-propios-metodos/">Leer aqui</a>
+                <br>
+                <br>
+                <b>Algunos metodos:</b>
+                <br>
+                <br>
+                -Clone() {El método Clone() crea un clon exacto de un string en una variable de tipo objeto. Por ello es necesario convertirlo a string utilizando ToString() }
+                <br>
+                <br>
+                -CompareTo() {Sirve para comparar el contenido de dos strings. Si son iguales devuelve 0 para true y si son diferentes retorna 1 para false. En este caso como School y SchoolClone son strings idénticos devolverá un 0.}
+                <br>
+                <br>
+                -Contains() {Retorna True si el string contiene los caracteres que se pongan en los argumentos del método.}
+                <br>
+                <br>
+                -EndsWith() {Similar a Contains(), pero para comparar si los caracteres están al final del string.}
+                <br>
+                <br>
+                -StartsWith() {Funciona de la misma manera que EndsWith(), pero en este caso comprueba si empieza con una serie de caracteres indicados.}
+                <br>
+                <br>
+                -Equals() {Funciona de forma parecida a CompareTo(), pero para indicar si el contenido de ambos strings retorna True o False.}
+                <br>
+                <br>
+                -IndexOf() {Regresa la posición dentro del string del carácter indicado en el argumento.}
+                <br>
+                <br>
+                -ToLower() y ToUpper() {Convierten el string en todas letras minúsculas o mayúsculas.}
+                <br>
+                <br>
+                -Insert() {Inserta un nuevo string dentro de otro en la posición indicada dentro de los argumentos.}
+                <br>
+                <br>
+                -LastIndexOf() {Regresa la posición de la última vez que aparece el carácter.}
+                <br>
+                <br>
+                -Remove() {Elimina los caracteres del string a partir de la posición que le indiquemos hasta el final.}
+                <br>
+                <br>
+                -Replace() {Reemplaza todos los caracteres por otro indicado.}
+                <br>
+                <br>
+                -Split() {Este es un caso especial donde creamos un nuevo string donde guardamos el string separado en trozos por la letra indicada en los argumentos del método.}
+                <br>
+                <br>
+                -Substring() {Devuelve un substring o trozo de string de acuerdo a las posiciones indicadas en los argumentos.}
+                <br>
+                <br>
+                -ToCharArray() {Convierte el string en un arreglo de caracteres.}
+                <br>
+                <br>
+                -Trim() {Elimina espacios al principio y al final de un string.}
+            </p>
+            <br>
+
+            <div class="line" id="ciclos"></div>
+            <p class="title">If y ciclos</p>
+            <br>
+            <p class="info">
+                <b>If:</b>
+                <br>
+                <br>
+                if(condition){
+                    <br>
+                    <br>
+                    Con los if, else o else if si solo tienen una linea de codigo interna, se puede omitir las llaves {}
+                    <br>
+                    <br>
+                }
+                <br>
+                else if(condition) {
+                    <br>
+                    <br>
+                }
+                <br>
+                else {
+                    <br>
+                    <br>
+                }
+                <br>
+                <br>
+                <br>
+                <b>Switch:</b>
+                <br>
+                <br>
+                switch(variable){
+                    <br>
+                    <br>
+                    ....case 5:
+                    <br>
+                    ........codigo;
+                    <br>
+                    ........break;
+                    <br>
+                    <br>
+                    ....case 6:
+                    <br>
+                    ..........codigo;
+                    <br>
+                    ........break;
+                    <br>
+                    <br>
+                    ....deefault:
+                    <br>
+                    ........codigo;
+                    <br>
+                    ........break;
+                    <br>
+                }
+                <br>
+                <br>
+                <br>
+                <b>For:</b>
+                <br>
+                <br>
+                for(int i = 0, j = 0; i < 5, j > 5; i++, j--){
+                    <br>
+                    <br>
+                    Se pueden tenner na o mas variables de control
+                    <br>
+                    <br>
+                }
+                <br>
+                <br>
+                <br>
+                <b>While:</b>
+                <br>
+                <br>
+                while(condition){
+                    <br>
+                    <br>
+                ....codigo;
+                <br>
+                <br>
+                }
+                <br> 
+                <br> 
+                <br> 
+                -Tambien existe el do-while, la diferencia es que este va a ejecutar el contenido del ciclo almenos una vez
+                <br>
+                <br>
+                <br>
+                <b>foreach:</b>
+                <br>
+                <br>
+                foreach (string i in arrayOfStrings){
+                    <br>
+                    <br>
+                    Console.WriteLine(i);
+                    <br>
+                    <br>
+                }
+            </p>
+            <br>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer-p">That's it</p>
+    </footer>
+</body>
+
+</html>
