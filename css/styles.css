@@ -131,6 +131,7 @@ header a h1 {
 .container__button--1 {
     border: solid 0.2rem #36b3c0;
     box-shadow: 0 0 3rem #36b3c0;
+    margin-bottom: 4.5rem;
 }
 
 .container__button--2 {

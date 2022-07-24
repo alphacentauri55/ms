@@ -23,30 +23,27 @@
     <main class="info__container">
         <br>
         <br>
-        <h1 class="main__title">POO</h1>
+        <h1 class="main__title">POO basico</h1>
         <br>
 
         <section class="sections-titles">
             <a href="#importancia">
                 <div class="smoth-scrolls">Que es POO</div>
             </a>
-            <a href="#structura">
-                <div class="smoth-scrolls">Basicos de C#</div>
+            <a href="#uml">
+                <div class="smoth-scrolls">UML</div>
             </a>
-            <a href="#datos">
-                <div class="smoth-scrolls">Tipos de datos</div>
+            <a href="#objetos">
+                <div class="smoth-scrolls">Objetos, atributos y metodos</div>
             </a>
-            <a href="#manipular">
-                <div class="smoth-scrolls">Manipular datos</div>
+            <a href="#modularidad">
+                <div class="smoth-scrolls">Clases, Abstraccion, Modularidad</div>
             </a>
-            <a href="#boolean">
-                <div class="smoth-scrolls">Booleanos</div>
+            <a href="#herencia">
+                <div class="smoth-scrolls">Herencia</div>
             </a>
-            <a href="#operadores">
-                <div class="smoth-scrolls">Tipos de operadores</div>
-            </a>
-            <a href="#random">
-                <div class="smoth-scrolls">Aleatorios con rango</div>
+            <a href="#sintasis">
+                <div class="smoth-scrolls">Sintaxis de codigo</div>
             </a>
         </section>
 
@@ -55,7 +52,227 @@
             <p class="title" id="importancia">Que es POO</p>
             <br>
             <p class="info">
-              
+              -La programacion orientada a objetos es un paradigma que se basa en objetos coceptuales con diversas herramientas que hacen al codigo mas practico y estructurado. Es un tipo de forma de pensar para plasmar codigo mas manejable. Esto nos ayuda para:
+              <br>
+              <br>
+              ----El codigo muy largo
+              <br>
+              <br>
+              ----Cuando el codigo falla y todo se rompe
+              <br>
+              <br>
+              ----Codigo spaghetti: perdida de control sobre el codigo por controles anidados
+              <br>
+              <br>
+              POO es la forma de romper el codigo estructurado, las muchas lineas de codigo y las secuencias repetitivas
+              <br>
+              <br>
+              <br>
+              Principalmente se compone de 4 elementos:
+              <br>
+              <br>
+              <b>Clases</b> - <b>Propiedades</b> - <b>Metodos</b> - <b>Objetos</b>
+              <br>
+              <br>
+              <br>
+              Tambien existen en el modelo de POO estos componentes:
+              <br>
+              <br>
+              <b>Encapsulamiento</b> - <b>Abstraccion</b> - <b>Herencia</b> - <b>Polimorfismo</b>
+              <br>
+              <br>
+              <br>
+              <b>Lenguajes de programacion:</b>
+              <br>
+              <br>
+              -Existen varios tipos de lenguajes:
+              <br>
+              <br>
+              <b>Lenguaje compilado: </b>Genera una compilacion del codigo y luego genera un paquete y despues la maquina virtual del lenguaje lee ese codigo compilado, Ejemplo: java.
+              <br>
+              <br>
+              <b>Lenguaje interpretado: </b>El navegador web o el servidor va interpretando linea por linea el codigo, Ejemplo: javascript o php
+              <br>
+              <br>
+              <b>Lenguajes orientados a objetos: </b>Son lenguajes basados en clases que se basan en el concepto de dos entidades distintas: clases e intancias. La mayoria de languajes de este tipo sonn multiparadigma o usan compilacion e interpretacion en distintos momentos, Ejemplo: java, c++.
+              <br>
+              <br>
+              <br>
+              -La gran mayoria de los lenguajes de programacion usan el paradigma de POO, todos de manera diferente y cada uno con sus particularidades. Esto va a depender del fin del lenguaje y de como este esté construido para ser manipulado. 
+            </p>
+            <br>
+
+            <div class="line" id="uml"></div>
+            <p class="title">UML</p>
+            <br>
+            <p class="info">
+                -UML es Unified Modeling Language, sirve para modelar diagramas de clases, objetos, en general proyectos qe esten bajo la arquitectura de POO. <a href="https://www.teatroabadia.com/es/uploads/documentos/iagramas_del_uml.pdf">Mas info aqui</a>
+                <br>
+                <br>
+                -Restangulo con tres secciones principales
+                <br>
+                <br>
+                <br>
+                <b>Modelado de clases:</b> 
+                <br>
+                <br>
+                -Parte de arriba: El nombre de la clase
+                <br>
+                -Parte de medio: Atributos
+                <br>
+                -Parte de abajo: Metodos
+                <br>
+                Representacion: <a href="">Aca</a>
+            </p>
+            <br>
+
+            <div class="line" id="objetos"></div>
+            <p class="title">Objetos, atributos y metodos</p>
+            <br>
+            <p class="info">
+                -Lo primero que se tiene que hacer es identificar un objeto para resolver un problema
+                <br>
+                <br>
+                <b>Señales de un objeto:</b>  
+                <br>
+                <br>
+                -Siempre van a tener propiedades y comportamientos
+                <br>
+                <br>
+                -Su nombre sera un sustantivo
+                <br>
+                <br>
+                -Pueden ser fisicos o conceptuales
+                <br>
+                <br>
+                <br>
+                <b>Propiedades:</b>
+                <br>
+                <br>
+                -Son las caracteristicas de un objeto
+                <br>
+                <br>
+                -Las propiedades de un objeto tambien se pueden llamar atributos
+                <br>
+                <br>
+                -Tambien seran sustantivos: Nombre, tamaño, estado, forma, etc...
+                <br>
+                <br>
+                <br>
+                <b>Metodos:</b>
+                <br>
+                <br>
+                -Son todas las acciones u operaciones del objeto, comportamientos 
+                <br>
+                <br>
+                -Suelen ser verbos o sustantivo y verbo, siempre con un verbo.
+                <br>
+                <br>
+                <br>
+                Cada objeto debe de tener sus propios atributos y comportamientos, es muy importante el contexto para saber como definir estos.
+                <br>
+                <br>
+                -Un objeto es una instancia de la clase. Es decir, el objeto es el resultado de lo que modelamos o los parámetros que dejamos declarados en la clase.
+            </p>
+            <br>
+
+            <div class="line" id="modularidad"></div>
+            <p class="title">Clases, Abstraccion, Modularidad</p>
+            <br>
+            <p class="info">
+                <b>Clases: </b>Son los modelos sobre los cuales se contruyen los objetos
+                <br>
+                <br>
+                <b>Abstraccion: </b>Abstraer los datos o caracteristicas de un objeto para generar un molde
+                <br>
+                <br>
+                <b>Modularidad: </b>Es un principio que se enfoca en modulos, ayuda a que los elementos vivan separados independientemente y que cumplan el principio de edificacion para gennerar elementos en masa.
+                <br>
+                Asi cuando ocurra un error este solo afectara a ese modulo y no a toda la edificacion.
+                <br> 
+                <br> 
+                <br>
+                <b>Principios de POO gracias a la modularidad:</b>
+                <br> 
+                <br>
+                -Reutilizar 
+                <br>
+                -Evitar colapsos 
+                <br>
+                -Mantenible  
+                <br>
+                -Legibilidad  
+                <br>
+                -Resolucion rapida de problemas
+                <br>
+                <br>
+                <br>
+                -La <b>Clase</b> sera lo que provoque la modularidad
+                <br> 
+                -Dividir el programa en modulos 
+                <br>
+                -Separar las clases en achivos, es muy buena practica
+            </p>
+            <br>
+
+            
+            <div class="line" id="herencia"></div>
+            <p class="title">Herencia</p>
+            <br>
+            <p class="info">
+                -Crear nuevas clases a partir de otras.
+                <br>
+                <br>
+                -Reutilizar codigo 
+                <br>
+                <br>
+                -Se establece una relacion padre e hijo
+                <br>
+                <br>
+                -superclase = padre, subclase = hijo
+                <br>
+                <br>
+                -Cuando detecto características y comportamientos iguales, entonces significa que debo realizar una abstracción.
+                <br>
+                <br>
+                -<b>Abstraccion: </b>Cuando las clases hijas heredan los metodos y atributos de la clase padre
+                
+            </p>
+            <br>
+
+            <div class="line" id="sintasis"></div>
+            <p class="title">Sintaxis de codigo</p>
+            <br>
+            <p class="info">
+                <b>Usando python</b>
+                <br>
+                <br>
+                class Person {      
+                    <br>
+                    <br>
+                ....name = str       
+                    <br>
+                    <br>
+                ....def walk(){}   
+                    <br>
+                }
+                <br>
+                <br>
+                -Asi se define una clase, un atributo y un metodo.
+                <br>
+                <br>
+                -Por buenas praticas es mejor tener cada clase separada en un archivo difernte, el nombre de la clase tiene que ser igual al nombre del archivo pero con la primera letra en mayusc
+                <br>
+                <br>
+                <br>
+                -Un objeto es una instancia de la clase. Es decir, el objeto es el resultado de lo que modelamos o los parámetros que dejamos declarados en la clase.
+                <br>
+                <br>
+                <b>Generar una instancia de la clase: </b>
+                <br>
+                <br>
+                person = Person() {Asi se usa el metodo constructor, es instanciar el objeto para tener los parametros minimos para vivir}
+
             </p>
             <br>
 
